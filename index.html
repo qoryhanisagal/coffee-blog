@@ -7,60 +7,73 @@
     <title>Brew Mastery Blog</title>
 </head>
 <body>
-<!-- Header -->
-<!-- Header -->
-<header class="header-with-bg">
-    <div class="menu-bar">
-        <!-- Blog Name -->
-        <h1 class="blog-name">Welcome to Brew Mastery Blog</h1>
 
-        <!-- Navigation Links -->
-        <nav>
-            <ul class="nav-links">
-                <li><a href="#">Brewing Tips</a></li>
-                <li><a href="#">Coffee Recipes</a></li>
-                <li><a href="#">Workshops</a></li>
-                <li><a href="#">Coffee Culture</a></li>
-            </ul>
-        </nav>
+<!-- Header -->
+<header>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        Get started today with Brew Mastery
+    </div>
 
-        <!-- Buttons -->
-        <div class="menu-buttons">
-            <a href="#" class="btn btn-signin">Sign in</a>
-            <a href="#" class="btn btn-join">Join for free</a>
+    <!-- Header Content with Background -->
+    <div class="header-with-bg">
+        <div class="menu-bar">
+            <!-- Blog Name -->
+            <h1 class="blog-name">Welcome to Brew Mastery Blog</h1>
+
+            <!-- Navigation Links -->
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#">Brewing Tips</a></li>
+                    <li><a href="#">Coffee Recipes</a></li>
+                    <li><a href="#">Workshops</a></li>
+                    <li><a href="#">Coffee Culture</a></li>
+                </ul>
+            </nav>
+
+            <!-- Buttons -->
+            <div class="menu-buttons">
+                <a href="#" class="btn btn-signin">Sign in</a>
+                <a href="#" class="btn btn-join">Join for free</a>
+            </div>
         </div>
     </div>
 </header>
 
-    <!-- Main Content -->
-    <main class ="container">
+<!-- Main Content -->
+<main class="container">
+    <!-- Blog Section -->
+    <section id="blog-section" class="blog-section">
         <h2>Our Blog</h2>
-        <!-- Blog Post 1 -->
-        <div class="border-b">
-            <img src="img/blog1.jpg" alt="Image Error">
-            <h3>Coffee Bean Type</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel repellat ea, ab possimus quas eveniet magni, deserunt magnam veniam sed, dolorem delectus blanditiis repellendus! Molestias ea cupiditate vel neque autem.</p>
-            <a href="#" class="btn btn-read-more">Read More</a>
-        </div>
+        <div class="flex-container">
+            <!-- Blog Post 1 -->
+            <div class="border-b">
+                <img src="img/blog1.jpg" alt="Image Error">
+                <h3>Coffee Bean Type</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel repellat ea, ab possimus quas eveniet magni, deserunt magnam veniam sed, dolorem delectus blanditiis repellendus! Molestias ea cupiditate vel neque autem.</p>
+                <a href="#" class="btn btn-read-more">Read More</a>
+            </div>
 
-        <!-- Blog Post 2 -->
-        <div class="border-b">
-            <img src="img/blog2.jpg" alt="Image Error">
-            <h3>3 Delicious Coffee Recipes</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel repellat ea, ab possimus quas eveniet magni, deserunt magnam veniam sed, dolorem delectus blanditiis repellendus! Molestias ea cupiditate vel neque autem.</p>
-            <a href="#" class=" btn btn-read-more">Read More</a>
-        </div>
+            <!-- Blog Post 2 -->
+            <div class="border-b">
+                <img src="img/blog2.jpg" alt="Image Error">
+                <h3>3 Delicious Coffee Recipes</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel repellat ea, ab possimus quas eveniet magni, deserunt magnam veniam sed, dolorem delectus blanditiis repellendus! Molestias ea cupiditate vel neque autem.</p>
+                <a href="#" class="btn btn-read-more">Read More</a>
+            </div>
 
-        <!-- Blog Post 3 -->
-        <div class="border-b">
-            <img src="img/blog3.jpg" alt="Image Error">
-            <h3>Coffee Benefits</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel repellat ea, ab possimus quas eveniet magni, deserunt magnam veniam sed, dolorem delectus blanditiis repellendus! Molestias ea cupiditate vel neque autem.</p>
-            <a href="#" class=" btn btn-read-more">Read More</a>
+            <!-- Blog Post 3 -->
+            <div class="border-b">
+                <img src="img/blog3.jpg" alt="Image Error">
+                <h3>Coffee Benefits</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel repellat ea, ab possimus quas eveniet magni, deserunt magnam veniam sed, dolorem delectus blanditiis repellendus! Molestias ea cupiditate vel neque autem.</p>
+                <a href="#" class="btn btn-read-more">Read More</a>
+            </div>
         </div>
+    </section>
+</main>
 
-    </main>
-    <section id="courses" class="container">
+    <section id="courses" class="courses-section">
         <h2>Our Courses and Workshops</h2>
     
         <!-- Course 1 -->
@@ -78,11 +91,19 @@
             <p><strong>Seats:</strong> 20</p>
             <a href="#" class="btn btn-more">More Information</a>
         </div>
+    
+        <!-- Course 3 -->
+        <div class="course border-b">
+            <h3>Latte Art Basics</h3>
+            <p><strong>Price:</strong> $25</p>
+            <p><strong>Seats:</strong> 15</p>
+            <a href="#" class="btn btn-more">More Information</a>
+        </div>
     </section>
     
     <!--Footer-->
     <footer>
-        <nav>
+        <nav class="footer-nav">
             <ul>
                 <li><a href="about.html">About</a></li>
                 <li><a href="courses.html">Courses</a></li>
