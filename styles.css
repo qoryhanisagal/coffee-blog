@@ -78,14 +78,80 @@ h2, h3 {
     background-color: #f39c12;   /* Light bronze background on hover */
 }
 
-/* Header */
-header {
-    background-image: url(img/banner.jpg);
-    background-position: center center;
-    background-size: cover;
-    height: 400px;
+/* Header with Background */
+.header-with-bg {
+    background-image: url('img/banner.jpg'); /* Replace with the path to your image */
+    background-size: cover;                /* Ensures the image covers the whole area */
+    background-position: center;           /* Centers the image */
+    background-repeat: no-repeat;          /* Prevents the image from repeating */
+    color: white;                          /* Makes text white for contrast */
+    padding: 50px 20px;                    /* Adds spacing inside the header */
+    height: 400px;                         /* Set a fixed height for the header */
+}
+
+/* Blog Name */
+.blog-name {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Text shadow for readability */
+}
+
+/* Navigation Links */
+.nav-links {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
     color: white;
-    text-align: center;
+    font-size: 1em;
+    transition: color 0.3s ease;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Text shadow for readability */
+}
+
+.nav-links a:hover {
+    color: #f39c12; /* Hover color */
+}
+
+/* Buttons */
+.menu-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.btn {
+    text-decoration: none;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 4px;
+    font-size: 0.9em;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent button background */
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #f39c12; /* Hover effect */
+}
+
+/* Buttons Specific Colors */
+.btn-signin {
+    background-color: rgba(211, 84, 0, 0.7);
+}
+
+.btn-join {
+    background-color: rgba(230, 126, 34, 0.7);
 }
 
 /* Courses Section */
@@ -118,7 +184,7 @@ header {
     margin-bottom: 20px;         /* Add spacing between courses */
     background-color: white;     /* White background for courses */
  }
- 
+
 .course h3 {
     font-size: 1.5em;
     color: #000;                 /* Black course titles */
