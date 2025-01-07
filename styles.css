@@ -100,7 +100,7 @@ header {
     margin-bottom: 20px;
     color: #333;                 /* Dark gray heading */
 }
-
+/* Individual Course Styles */
 .course {
     border: 1px solid #ddd;      /* Light border around each course */
     border-radius: 8px;          /* Rounded corners */
@@ -111,6 +111,14 @@ header {
     text-align: left;            /* Left-align content within courses */
 }
 
+.border-b {
+    border: 1px solid #ddd;      /* Light border around each course */
+    border-radius: 8px;          /* Rounded corners */
+    padding: 20px;               /* Space inside the course box */
+    margin-bottom: 20px;         /* Add spacing between courses */
+    background-color: white;     /* White background for courses */
+ }
+ 
 .course h3 {
     font-size: 1.5em;
     color: #000;                 /* Black course titles */
