@@ -157,6 +157,13 @@ img {
     border-bottom: 1px solid #ddd; /* Add a light gray border */
     font-size: 1.2em; /* Slightly larger font size */
 }
+.nav-bar-title {
+    font-size: 1.2em; /
+    font-weight: ; /* Keep bold styling */
+    margin: 0;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Shadow for readability */
+    color: black; /* Ensure text is black */
+}
 
 /* Navigation Links */
 .nav-links {
@@ -175,7 +182,7 @@ img {
     text-decoration: none; /* Remove underline */
     color: black; /* Black links */
     font-size: 1em;
-    font-weight: bold;
+    font-weight: normal;
     transition: color 0.3s ease; /* Smooth hover effect */
 }
 
