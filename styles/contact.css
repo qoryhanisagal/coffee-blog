@@ -45,7 +45,7 @@ body {
     align-items: center; /* Vertically centers the logo and text */
     font-size: 1.5em; /* Makes the title larger for emphasis */
     font-weight: bold; /* Adds visual weight to the text */
-    color: #333; /* Matches the body text color */
+    color: black; /* Matches the body text color */
 }
 
 .nav-bar-title .logo {
@@ -67,8 +67,9 @@ body {
 
 .nav-links li a {
     text-decoration: none; /* Removes underline from links */
-    color: #333; /* Sets a neutral text color */
+    color: black; /* Sets a neutral text color */
     transition: color 0.3s ease; /* Adds a smooth color transition on hover */
+    font-weight: bold;
 }
 
 .nav-links li a:hover {
@@ -79,6 +80,34 @@ body {
 /* Contact Form Section */
 /* I styled the contact section to make the form stand out. */
 /* ============================================*/
+
+.image-container img {
+    width: 100%; /* Makes the image stretch across the container */
+    height: auto; /* Maintains the aspect ratio */
+    border-radius: 20px; /* Rounds the edges of the image */
+}
+
+.contact-container {
+    position: relative; /* Allow positioning of child elements */
+    max-width: 800px; /* Limit width */
+    margin: 40px auto; /* Center the container */
+    border-radius: 15px; /* Rounds the container edges */
+    overflow: hidden; /* Keeps content inside rounded corners */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Add depth */
+}
+
+.form-container {
+    position: absolute; /* Position the form relative to .contact-container */
+    bottom: 10px; /* Align at the bottom */
+    right: 10px; /* Align at the right */
+    z-index: 1; /* Ensure form stays above the image */
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly translucent white */
+    padding: 40px; /* Add padding inside the form */
+    border-radius: 15px; /* Match the rounded corners */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+    width: 300px; /* Adjust width for balance */
+    max-width: 600px; /* Ensure it doesn’t grow too large */
+}
 
 .contact-section {
     background-color: #fff; /* White background for the form container */
@@ -92,7 +121,7 @@ body {
 
 /* ============================================*/
               /* Form Heading */
-============================================ */
+/*============================================ */
 /* I styled the form heading to grab attention. */
 .contact-section h1 {
     margin-bottom: 20px; /* Adds spacing below the heading */
