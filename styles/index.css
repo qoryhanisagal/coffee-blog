@@ -19,7 +19,7 @@
 /* ===================================== */
 /* Header Content with Background */
 .header-with-bg {
-    background-image: url('img/banner.jpg'); /* Path to image */
+    background-image: url('../img/banner.jpg'); /* Path to image */
     background-size: cover;                /* Ensures the image covers the whole area */
     background-position: center;           /* Centers the image */
     background-repeat: no-repeat;          /* Prevents the image from repeating */
