@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Coffee Brew</title>
+    <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="styles/contact.css">
+</head>
+<body>
+    <header class="nav-bar">
+        <div class="nav-bar-title">
+            <img src="img/Icon coffee.jpeg" alt="Coffee Brew Logo" class="logo">
+            Coffee Brew
+        </div>
+        <ul class="nav-links">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="workshop.html">Workshops</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="about.html">About Us</a></li>
+        </ul>
+    </header>
+
+    <main class="container">
+        <!-- Contact Form Section -->
+        <section class="contact-section">
+            <h1>Get in Touch</h1>
+    
+            <!-- Form Section -->
+            <div>
+                <div>
+                    <img src="img/contact.jpg" alt="contact image">
+                </div>
+                <div>
+                    <!-- Hidden Checkbox to Control Popup Visibility -->
+                    <input type="checkbox" id="form-toggle" hidden>
+    
+                    <!-- Pop-Up Message -->
+                    <div class="popup-message">
+                        <p>✅ Your message has been sent!</p>
+                    </div>
+    
+                    <!-- Contact Information Section -->
+                    <form class="contact-form" onsubmit="return false;">
+                        <!-- Input Field for Name -->
+                        <div class="input-container">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+    
+                        <!-- Input Field for Email -->
+                        <div class="input-container">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+    
+                        <!-- Input Field for Message -->
+                        <div class="input-container">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                        </div>
+    
+                        <!-- Submit Button -->
+                        <!-- Link the Submit Button to the Hidden Checkbox -->
+                        <label for="form-toggle">
+                            <button type="button" class="btn-submit">Send</button>
+                        </label>
+    
+                        <!-- Hidden Checkbox for Clear Popup -->
+                        <input type="checkbox" id="clear-toggle" hidden>
+    
+                        <!-- Pop-Up for Clear -->
+                        <div class="popup-clear">
+                            <p>Your form has been cleared!</p>
+                        </div>
+    
+                        <!-- Clear Button -->
+                        <label for="clear-toggle">
+                            <button type="reset" class="btn-reset">Clear Form</button>
+                        </label>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Location Section -->
+    <section class="location-section">
+        <div class="location-container">
+            <!-- Text Content -->
+            <div class="location-details">
+                <h2>Our Location</h2>
+                <p><span class="bold">Address:</span> 123 Coffee Lane, Brewtown, CA 90210</p>
+                <p><span class="bold">Phone:</span> (123) 456-7890</p>
+                <p><span class="bold">Email:</span> contact@coffeebrew.com</p>
+            </div>
+            <!-- Image Content -->
+            <div class="location-map">
+                <img src="img/location.jpg" alt="Map Location">
+            </div>
+        </div>
+    </section>
+<!-- Footer Section -->
+<footer>
+    <div class="footer-links">
+        <!-- Quick Links Section -->
+        <div class="quick-links">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="workshop.html">Workshops</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+        </div>
+        <!-- Social Links Section -->
+        <div class="social-links">
+            <h3>Follow Us</h3>
+            <ul>
+                <li>
+                    <img src="img/facebook-f.svg" alt="Facebook Icon" class="social-icon">
+                    <a href="#">Facebook</a>
+                </li>
+                <li>
+                    <img src="img/twitter.svg" alt="Twitter Icon" class="social-icon">
+                    <a href="#">Twitter</a>
+                </li>
+                <li>
+                    <img src="img/instagram.svg" alt="Instagram Icon" class="social-icon">
+                    <a href="#">Instagram</a>
+                </li>
+            </ul>
+        </div>
+        <!-- Contact Links Section -->
+        <div class="contact-links">
+            <h3>Contact Us</h3>
+            <!-- Email Section -->
+            <div class="contact-email">
+                <img src="img/email.svg" alt="Email Icon" class="contact-icon">
+                <p>contact@coffeebrew.com</p>
+            </div>
+            <!-- Phone Section -->
+            <div class="contact-phone">
+                <img src="img/phone.svg" alt="Phone Icon" class="contact-icon">
+                <p>(123) 456-7890</p>
+            </div>
+        </div>
+    </div>
+    <p>&copy; 2025 Coffee Brew by Koiree Descoteaux. All rights reserved.</p>
+</footer>
+</body>
+<html>
