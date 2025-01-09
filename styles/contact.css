@@ -474,9 +474,12 @@ footer p,
     margin: 0; /* I removed unnecessary margins. */
 }
 
+/* ============================================ */
 /* Footer Copyright Section */
+/* I styled the copyright text at the bottom of the footer. */
+/* ============================================ */
 footer p {
-    margin-top: 0px; /* Remove space above copyright */
-    font-weight: bold;
-    text-align: center;
+    margin-top: 0px; /* I removed extra space above the text. */
+    font-weight: bold; /* I made the text bold for emphasis. */
+    text-align: center; /* I aligned the text to the center. */
 }
