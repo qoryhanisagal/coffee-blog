@@ -1,0 +1,232 @@
+/* General Reset */
+/* I reset the default margins, paddings, and box model for all elements 
+   to ensure a consistent base layout across browsers. Info found in Odin Project Discord*/
+   * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Makes width and height include padding and border */
+}
+
+/* Body Styles */
+/* Here, I style the body to create a visually appealing and readable layout. */
+body {
+    font-family: Arial, Helvetica, sans-serif; /* Sets a clean, sans-serif font */
+    line-height: 1.6; /* Improves text readability */
+    color: #333; /* Sets the text color to a dark gray */
+    background-color: #f9f9f9; /* Adds a light gray background for contrast */
+}
+
+/* Navigation Bar */
+/* I designed the navigation bar to stay consistent across the site. */
+.nav-bar {
+    display: flex; /* Uses Flexbox for easy layout alignment */
+    justify-content: space-between; /* Positions elements on opposite sides */
+    align-items: center; /* Vertically centers the items */
+    padding: 15px 20px; /* Adds space inside the navigation bar */
+    background-color: #fff; /* White background for a clean look */
+    border-bottom: 1px solid #ddd; /* Subtle border below the navbar */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Adds depth with a light shadow */
+}
+
+/* Navigation Bar Title */
+/* I style the title section with a logo and text for branding. */
+.nav-bar-title {
+    display: flex; /* Ensures the logo and title align horizontally */
+    align-items: center; /* Vertically centers the logo and text */
+    font-size: 1.5em; /* Makes the title larger for emphasis */
+    font-weight: bold; /* Adds visual weight to the text */
+    color: #333; /* Matches the body text color */
+}
+
+.nav-bar-title .logo {
+    width: 40px; /* Sets a fixed size for the logo */
+    height: 40px; /* Matches the logo's width */
+    margin-right: 10px; /* Adds space between the logo and the text */
+}
+
+/* Navigation Links */
+/* I styled the navigation links for a clean and interactive menu. */
+.nav-links {
+    list-style: none; /* Removes default bullet points */
+    display: flex; /* Aligns links horizontally */
+    gap: 20px; /* Adds spacing between links */
+}
+
+.nav-links li a {
+    text-decoration: none; /* Removes underline from links */
+    color: #333; /* Sets a neutral text color */
+    transition: color 0.3s ease; /* Adds a smooth color transition on hover */
+}
+
+.nav-links li a:hover {
+    color: #f39c12; /* Highlights links with an orange color on hover */
+}
+
+/* Contact Form Section */
+/* I styled the contact section to make the form stand out. */
+.contact-section {
+    background-color: #fff; /* White background for the form container */
+    padding: 40px; /* Adds spacing inside the section */
+    margin: 40px auto; /* Centers the section horizontally with a top/bottom margin */
+    max-width: 800px; /* Limits the section width for readability */
+    border-radius: 10px; /* Rounds the corners for a softer look */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Adds depth with a light shadow */
+    text-align: center; /* Centers the heading and other content */
+}
+
+/* Form Heading */
+/* I styled the form heading to grab attention. */
+.contact-section h1 {
+    margin-bottom: 20px; /* Adds spacing below the heading */
+    color: #f39c12; /* Highlights the heading in orange */
+}
+
+/* Contact Form */
+/* I styled the form to make inputs user-friendly. */
+.contact-form {
+    margin-top: 20px;
+    padding: 20px; /* Adds space inside the form */
+    background-color: #f7ca9b; /* Light orange background */
+    border-radius: 10px; /* Rounds the corners of the form */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
+}
+
+.input-container {
+    margin-bottom: 15px; /* Adds spacing between form fields */
+    text-align: left; /* Aligns labels and inputs to the left */
+}
+
+.input-container label {
+    display: block; /* Ensures the label appears above the input */
+    margin-bottom: 5px; /* Adds space below the label */
+    font-weight: bold; /* Highlights the label text */
+}
+
+.input-container input,/* Refactored and combined input and text area */
+.input-container textarea {
+    width: 100%; /* Makes the input/textarea stretch to fill the container */
+    padding: 10px; /* Adds space inside the input field */
+    border: 1px solid #ddd; /* Adds a subtle border */
+    border-radius: 5px; /* Rounds the input's corners */
+    background-color: #f9f9f9; /* Matches the background for consistency */
+}
+
+/* Resizing for the Textarea */
+/* I allow resizing for the message box but limit it vertically. */
+.input-container textarea {
+    resize: vertical; /* Allows vertical resizing only */
+    height: 100px; /* Sets an initial height for the textarea */
+}
+
+/* Submit Button */
+/* I added interactive styles to the submit button. */
+.btn-submit {
+    background-color: #f39c12; /* Sets the button's background to orange */
+    color: white; /* Makes the text color white for contrast */
+    border: none; /* Removes the default button border */
+    padding: 10px 20px; /* Adds spacing inside the button */
+    border-radius: 5px; /* Rounds the button's corners */
+    cursor: pointer; /* Changes the cursor to a pointer on hover */
+    font-size: 16px; /* Makes the button text slightly larger */
+    font-weight: bold; /* Emphasizes the text */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Adds smooth hover/active effects */
+}
+
+.btn-submit:hover {
+    background-color: #e67e22; /* Darkens the button on hover */
+    transform: scale(1.05); /* Slightly enlarges the button on hover */
+}
+
+.btn-submit:active {
+    background-color: #d35400; /* Further darkens the button when clicked */
+    transform: scale(0.95); /* Slightly shrinks the button when clicked */
+}
+
+/* Location Section */
+/* I styled the location section to match the form design but with a shorter height */
+.location-section {
+    background-color: #fff; /* White background for the section */
+    padding: 10px 20px; /* Reduced vertical padding to make it shorter */
+    margin: 10px auto; /* Reduced margin for less space around the section */
+    max-width: 800px; /* Keeps the section centered and limits its width */
+    border-radius: 10px; /* Rounds the section's corners */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow for depth */
+    text-align: center; /* Centers the text within the section */
+}
+
+.location-section h2 {
+    margin-bottom: 10px; /* Reduced space below the heading */
+    color: #f39c12; /* Orange color for the heading text */
+    font-size: 20px; /* Slightly smaller font size for a more compact look */
+}
+
+.location-details {
+    margin-top: 10px; /* Reduced space above the location details */
+    text-align: left; /* Aligns the location details text to the left */
+    font-size: 14px; /* Keeps the text small for detailed information */
+    line-height: 1.4; /* Adjusts line spacing to reduce vertical height */
+}
+
+.location-details img {
+    margin-top: 10px; /* Reduced space above the image */
+    width: 100%; /* Adjusted to make the image smaller */
+    height: 250px;
+    */ Figure out a way to scale location image */
+    object-fit: cover;
+    border-radius: 10px; /* Rounds the image corners */
+}
+
+/* Footer Styles */
+/* I styled the footer to provide quick links and contact info. */
+footer {
+    background-color: #f39c12; /* Sets an orange background */
+    color: white; /* Makes the text white for contrast */
+    padding: 5px 0; /* Adds vertical spacing */
+    text-align: center; /* Centers the text */
+    font-size: 16px; /* Adjust font size for better proportions */
+}
+
+/* Footer Links Section  */
+.footer-links {
+    display: flex; /* Uses Flexbox for layout */
+    justify-content: space-between; /* Spreads sections evenly */
+    align-items: flex-start; /* Aligns items to the top */
+    padding: 5px; /* Adds spacing inside */
+    max-width: 1200px; /* Limits the width */
+    margin: 0 auto; /* Centers the footer links */
+    flex-wrap: wrap; /* Allows sections to wrap on smaller screens */
+    gap: 20px; /* Adds space between sections */
+}
+
+/* Footer Section Titles */
+.footer-links h3 {
+    margin-bottom: 0px; /* Add spacing below titles */
+    font-size: 20px; /* Adjust title font size */
+    font-weight: bold; /* Make titles stand out */
+}
+
+/* Footer Lists */
+.footer-links ul {
+    list-style: none; /* Remove bullet points from lists */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+}
+
+.footer-links ul li a {
+    text-decoration: none; /* Remove underline from links */
+    color: white; /* White link text for contrast */
+    font-size: 16px; /* Match font size with other text */
+    transition: color 0.3s ease; /* Add smooth hover effect */
+}
+
+/* Footer Link Hover Effect */
+.footer-links ul li a:hover {
+    color: #333; /* Change to dark gray on hover for readability */
+}
+
+/* Footer Copyright */
+footer p {
+    margin-top: 0px; /* Add space above copyright */
+    font-size: 12px; /* Make the copyright text smaller */
+    color: #fff; /* Keep copyright text white */
+}
