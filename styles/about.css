@@ -3,11 +3,11 @@
 /* ============================================ */
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    line-height: 1.6;
-    color: #333;
-    margin: 0;
-    background-color: #f9f9f9;
+    font-family: Arial, Helvetica, sans-serif; /* I chose a clean, sans-serif font to keep the design simple and professional. */
+    line-height: 1.6; /* This improves text readability by giving more space between lines. */
+    color: #333; /* I picked a dark gray for the text color because it's easier on the eyes than pure black. */
+    margin: 0; /* I removed any default margin so I can have full control over the layout. */
+    background-color: #f9f9f9; /* The light gray background gives a subtle contrast and keeps the page soft-looking. */
 }
 
 /* ============================================ */
@@ -15,54 +15,53 @@ body {
 /* ============================================ */
 
 .about-nav-bar {
-    display: flex; /* Uses Flexbox for easy layout alignment */
-    justify-content: space-between; /* Positions elements on opposite sides */
-    align-items: center; /* Vertically centers the items */
-    padding: 15px 20px; /* Adds space inside the navigation bar */
-    background-color: #fff; /* White background for a clean look */
-    border-bottom: 1px solid #ddd; /* Subtle border below the navbar */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Adds depth with a light shadow */
+    display: flex; /* Flexbox makes it easy to align items horizontally. */
+    justify-content: space-between; /* I spaced out the title and navigation links to opposite ends of the bar. */
+    align-items: center; /* This vertically aligns the logo and links, so everything looks neat. */
+    padding: 15px 20px; /* Adding padding here ensures the content isn’t squished against the edges. */
+    background-color: #fff; /* A white background helps the navigation bar stand out. */
+    border-bottom: 1px solid #ddd; /* This subtle border adds a clean separation from the rest of the page. */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* A slight shadow makes the bar appear elevated for a modern look. */
 }
 
 /* ============================================*/
 /* Navigation Bar Title */
-/* I style the title section with a logo and text for branding. */
 /* ============================================*/
 
 .nav-bar-title {
-    display: flex; /* Ensures the logo and title align horizontally */
-    align-items: center; /* Vertically centers the logo and text */
-    font-size: 1.5em; /* Makes the title larger for emphasis */
-    font-weight: bold; /* Adds visual weight to the text */
-    color: black; /* Matches the body text color */
+    display: flex; /* Flexbox ensures that the logo and text stay next to each other. */
+    align-items: center; /* I aligned the logo and text vertically to keep the title looking clean. */
+    font-size: 1.5em; /* The font size is increased to make the site name noticeable. */
+    font-weight: bold; /* I made the title bold to emphasize branding. */
+    color: black; /* Black text makes the title readable on a white background. */
 }
 
 /* Logo Styles */
 .nav-bar-title .logo {
-    width: 40px; /* Sets a fixed size for the logo */
-    height: 40px; /* Matches the logo's width */
-    margin-right: 10px; /* Adds space between the logo and the text */
+    width: 40px; /* I fixed the width of the logo so it stays consistent across the site. */
+    height: 40px; /* Matching the height ensures the logo doesn’t look stretched. */
+    margin-right: 10px; /* This gives breathing room between the logo and the text. */
 }
 
-/* ============================================*/
+/* ============================================ */
 /* Navigation Links */
-/* I styled the navigation links for a clean and interactive menu. */
-/* ============================================*/
+/* ============================================ */
+
 .nav-links {
-    list-style: none; /* Removes default bullet points */
-    display: flex; /* Aligns links horizontally */
-    gap: 20px; /* Adds spacing between links */
+    list-style: none; /* I removed the default bullets from the list for a cleaner look. */
+    display: flex; /* Flexbox helps align the links horizontally. */
+    gap: 20px; /* I added spacing between each link to make navigation easier to read. */
 }
 
 .nav-links li a {
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-    transition: color 0.3s ease;
+    text-decoration: none; /* No underlines to keep the design modern and minimalistic. */
+    color: black; /* I used black text to keep it simple and professional. */
+    font-weight: bold; /* Bold links ensure they stand out. */
+    transition: color 0.3s ease; /* This adds a smooth hover effect for better interactivity. */
 }
 
 .nav-links li a:hover {
-    color: #f39c12;
+    color: #f39c12; /* The hover color matches the brand's orange theme. */
 }
 
 /* ============================================ */
@@ -70,25 +69,24 @@ body {
 /* ============================================ */
 
 .about-intro {
-    text-align: center; /* Center-align the content */
-    padding: 40px 20px; /* Add spacing for readability */
-    margin: 20px auto; /* Center the section on the page */
-    max-width: 800px; /* Keep the section content width constrained */
-    background: none; /* Remove any background color */
-    border: none; /* Remove any borders */
-    box-shadow: none; /* Remove shadow effects */
+    text-align: center; /* I centered the content to make it look neat and focused. */
+    padding: 40px 20px; /* The padding ensures the content has breathing room. */
+    margin: 20px auto; /* This centers the intro section horizontally on the page. */
+    max-width: 800px; /* I constrained the width to improve readability, especially on larger screens. */
+    background: none; /* I left the background transparent so it blends seamlessly with the page. */
+    border: none; /* Removing borders ensures the section looks clean and simple. */
+    box-shadow: none; /* No shadows are necessary since this is a flat section. */
 }
 
 .about-intro h1 {
-    margin-bottom: 20px; /* Add spacing below the title */
-    color: #f39c12; /* Highlight the title in orange */
-    font-size: 2.5em; /* Make the title prominent */
-    text-align: center;
+    margin-bottom: 20px; /* Adding space below the title makes it visually distinct from the paragraph. */
+    color: #f39c12; /* The orange color ties into the brand and draws attention to the title. */
+    font-size: 2.5em; /* A larger font size makes the title stand out. */
 }
 
 .about-intro p {
-    font-size: 1.1em;
-    color: #555;
+    font-size: 1.1em; /* This font size is slightly larger than normal text for better readability. */
+    color: #555; /* A lighter gray for the text ensures it’s easy on the eyes. */
 }
 
 /* ============================================ */
@@ -96,79 +94,84 @@ body {
 /* ============================================ */
 
 .about-team {
-    padding: 40px 20px;
-    background-color: #fefefe;
-    text-align: center;
+    padding: 40px 20px; /* I added padding to give space between the section content and its edges. */
+    background-color: #fefefe; /* A white background creates a clean and professional look. */
+    text-align: center; /* Center-aligning makes the section feel organized and welcoming. */
 }
 
 .about-team h2 {
-    color: #f39c12;
-    font-size: 2em;
-    margin-bottom: 20px;
+    color: #f39c12; /* The orange color ensures the section title catches the user's attention. */
+    font-size: 2em; /* A prominent font size for the title ensures it stands out. */
+    margin-bottom: 20px; /* I added spacing below the title to separate it from the team cards. */
 }
 
 .team-members {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    gap: 20px;
+    display: flex; /* Flexbox makes arranging the team cards horizontally easy. */
+    justify-content: center; /* I spaced out the cards evenly to avoid clutter. */
+    flex-wrap: wrap; /* Wrapping ensures the cards stack nicely on smaller screens. */
+    gap: 80px; /* Adding gaps improves the spacing between team cards. */
 }
 
 .team-card {
-    background-color: #f7ca9b;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    max-width: 300px;
-    text-align: center;
+    background-color: #f4b878; /* A soft orange color complements the brand’s theme. */
+    border-radius: 10px; /* Rounded corners give the cards a friendly and modern look. */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Shadows add depth and make the cards pop. */
+    padding: 20px; /* Padding ensures the content inside the card doesn’t feel cramped. */
+    max-width: 300px; /* I constrained the width to maintain consistency across all cards. */
+    text-align: center; /* Center-aligning the content makes the cards look tidy. */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .team-card img {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    margin-bottom: 10px;
-    object-fit: cover;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 100px; /* I set a fixed size for the images to ensure uniformity. */
+    height: 100px; /* Matching the width keeps the images perfectly circular. */
+    border-radius: 60%; /* This creates a circular profile picture style. */
+    margin-bottom: 10px; /* Space below the image helps separate it from the name. */
+    object-fit: cover; /* Ensures the images don’t get distorted when resized. */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* A slight shadow gives the images a polished look. */
 }
 
 .team-card h3 {
-    color: #333;
-    font-size: 1.5em;
-    margin-bottom: 10px;
+    color: #333; /* A neutral dark gray ensures the text is readable. */
+    font-size: 1.5em; /* The larger font size gives prominence to the team member's name. */
+    margin-bottom: 10px; /* Space below the name separates it from the bio text. */
 }
 
 .team-card p {
-    font-size: 0.9em;
-    color: #555;
+    font-size: 0.9em; /* A slightly smaller font size ensures the bio fits neatly within the card. */
+    color: #555; /* A lighter gray for the text keeps it readable without overwhelming the card. */
+    line-height: 1.4;
 }
 
 /* ============================================ */
 /* Mission Section */
+/* Here, I styled the mission section to match the "About Us" styling. */
 /* ============================================ */
 
 .about-mission {
-    text-align: center; /* Center-align the content */
-    padding: 40px 20px; /* Add spacing for readability */
-    margin: 20px auto; /* Center the section on the page */
-    max-width: 800px; /* Keep the section content width constrained */
-    background: none; /* Remove any background color */
-    border: none; /* Remove any borders */
-    box-shadow: none; /* Remove shadow effects */
+    text-align: center; /* I center-aligned the content to keep it visually balanced. */
+    padding: 40px 20px; /* I added padding to give the section breathing room. */
+    margin: 20px auto; /* I centered the section horizontally on the page. */
+    max-width: 800px; /* I constrained the width so the text stays easy to read. */
+    background: none; /* I removed any background color to keep it clean. */
+    border: none; /* I removed borders for a minimalistic look. */
+    box-shadow: none; /* I took away any shadows to match the clean design. */
 }
 
-.about-mission h2 {
-    margin-bottom: 20px; /* Add spacing below the title */
-    color: #f39c12; /* Highlight the title in orange */
-    font-size: 2em; /* Make the title stand out */
-    text-align: center;
+.about-mission h1 {
+    margin-bottom: 20px; /* I added space below the title to separate it from the text. */
+    color: #f39c12; /* I used orange to make the title pop and align with the theme. */
+    font-size: 2.5em; /* I made the title large so it grabs attention. */
+    text-align: center; /* I centered the title to keep the design cohesive. */
 }
 
 .about-mission p {
-    font-size: 1.1em;
-    color: #555;
+    font-size: 1.1em; /* I set the font size to ensure the text is easy to read. */
+    color: #555; /* I used a softer gray for the text to avoid harsh contrasts. */
+    line-height: 1.6; /* I increased line spacing to improve readability. */
 }
-
 /* ============================================ */
 /* Footer Styles */
 /* Here, I styled the footer to make it visually appealing and functional. */
