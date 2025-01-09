@@ -1,0 +1,168 @@
+/* ================= */
+/* TOP BANNER STYLING */
+/* ================= */
+
+/* Top Bar */
+.top-bar {
+    background-color: #f39c12; /* Orange background */
+    color: white;             /* White text color */
+    text-align: center;       /* Center-align text */
+    padding: 10px 5%;        /* Top/Bottom fixed, Left/Right proportional */
+    font-size: 0.9em;         /* Slightly smaller font size */
+    letter-spacing: 0.5px; /* Slightly space out the letters */
+    font-weight: bold;        /* Make text bold */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* ======================================  */
+/* HEADER CONTENT WITH BACKGROUND STYLING */
+/* ===================================== */
+/* Header Content with Background */
+.header-with-bg {
+    background-image: url('../img/banner.jpg'); /* Path to image */
+    background-size: cover;                /* Ensures the image covers the whole area */
+    background-position: center;           /* Centers the image */
+    background-repeat: no-repeat;          /* Prevents the image from repeating */
+    color: white;                        /* Makes text white for contrast */
+    padding: 20px 0px;                    /* Adds spacing inside the header */
+    height: 400px;                        /* Set a fixed height for the header */
+    text-align: center;                   /* Center-align all content*/
+}
+.overlay-content {
+    text-align: center;               /* Center-align the text */
+    color: white;                     /* White text for contrast */
+    padding-top: 100px;               /* Push content down to the center */
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5); /* Add a shadow for readability */
+}
+
+.overlay-content h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.overlay-content p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.overlay-content .btn-explore {
+    background-color: #f39c12;       /* Orange button */
+    color: white;                    /* White text */
+    padding: 10px 20px;              /* Button padding */
+    border-radius: 5px;              /* Rounded corners */
+    text-decoration: none;           /* Remove underline */
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.overlay-content .btn-explore:hover {
+    background-color: #e67e22;       /* Slightly darker orange on hover */
+}
+
+/*==================================================================== */
+                        /* SECTION-SPECIFIC STYLING */
+  /*==================================================================== */
+
+/* ================= */
+/* BLOG STYLING */
+/* ================= */
+
+/* Blog Title Styling */
+.blog-title {
+    font-size: 2.5em;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Add shadow for better readability */
+    margin: 10px 0;
+}
+/* Headings */
+.blog-section {
+    flex: 2;                     /* Take up more space compared to courses */
+    margin-top: 40px;
+    text-align: center;
+    background-color: #fff;      /* White background for contrast */
+    border-radius: 8px;          /* Rounded corners */
+    padding: 20px;               /* Add padding inside */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.blog-section h2 {
+    text-align: center; /* Center the heading */
+    margin-bottom: 20px; /* Space below heading */
+    font-size: 1.8em;
+    color: #333; /* Darker color for heading */
+    padding-left: 10px; /*Adds spacing above the blog cards*/
+} 
+
+/* Class for "Read More" Buttons */
+.btn-read-more {
+    background-color: black;     /* Black button background */
+    color: white;                /* White text */
+}
+
+.btn-read-more:hover {
+    background-color: gray;      /* Gray button background on hover */
+}
+
+/* ================= */
+/* COURSES STYLING */
+/* ================= */
+/* Courses Section */
+#courses {
+    background-color: #f9f9f9;   /* Light background for contrast */
+    padding: 40px 20px;          /* Add spacing */
+    text-align: center;          /* Center-align content */
+}
+
+#courses h2 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    color: #333;                 /* Dark gray heading */
+}
+/* Individual Course Styles */
+.course {
+    border: 1px solid #ddd;      /* Light border around each course */
+    border-radius: 8px;          /* Rounded corners */
+    padding: 20px;               /* Space inside the course box */
+    margin: 20px auto;           /* Add spacing between courses */
+    max-width: 400px;            /* Limit the width */
+    background-color: white;     /* White background for courses */
+    text-align: left;            /* Left-align content within courses */
+}
+.course h3 {
+    font-size: 1.5em;
+    color: #000;                 /* Black course titles */
+    margin-bottom: 10px;
+}
+
+.course p {
+    font-size: 1em;
+    color: #555;                 /* Gray text for details */
+    margin: 5px 0;
+}
+
+.courses-section {
+    flex: 1;                     /* Take up less space compared to blog */
+    background-color: #f9f9f9;   /* Light gray background */
+    border-radius: 8px;          /* Rounded corners */
+    padding: 20px;               /* Add padding inside */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+/* Class for "More Information" Buttons */
+.btn-more {
+    background-color: #f39c12;   /* Default Orange background */
+    color: white;                /* White text */
+}
+
+.btn-more:hover {
+    background-color: #cd7f32;   /* Dark Orange background on hover */
+}
+
+/* Class for "Info" Buttons */
+.btn-info {
+    background-color: #f39c12;   /* Bronze button background */
+    color: white;                /* White text */
+}
+
+.btn-info:hover {
+    background-color: #cd7f32;   /* Light bronze background on hover */
+}
