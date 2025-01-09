@@ -237,7 +237,7 @@ input#form-toggle:checked ~ .popup-message{
 .popup-clear{
     display: none; /* Initially hidden */
     opacity: 0;
-    background-color: red;
+    background-color: white;
     padding: 10px;
     border-radius: 5px;
     text-align: center;
@@ -302,44 +302,69 @@ input#clear-toggle:checked ~ .popup-clear {
     object-fit: cover; /* Ensure the image scales properly */
 }
 
-/* ============================================*/
+/* ============================================ */
 /* Footer Styles */
-/* I styled the footer to provide quick links and contact info. */
-/* ============================================*/
+/* Here, I styled the footer to make it visually appealing and functional. */
+/* ============================================ */
 footer {
-    background-color: #f39c12; /* Sets an orange background */
-    color: white; /* Makes the text white for contrast */
-    padding: 20px 0; /* Reduce vertical spacing */
-    text-align: left; /* Centers the text */
-    font-size: 16px;
-    height: 200px; /* Set the exact height */
-    position: static;
+    position: relative; /* I used relative positioning to maintain flexibility within the layout. */
+    background-color: #f39c12; /* I chose an orange background to match the branding. */
+    color: white; /* I set the text color to white for contrast. */
+    height: 200px; /* I set the height to 200px to create enough space for all footer content. */
+    width: 100%; /* The footer spans the full width of the page. */
+    bottom: 0; /* I positioned the footer at the bottom of the viewport. */
+    display: flex; /* I used flexbox for the footer layout. */
+    flex-direction: column; /* I stacked footer content vertically. */
+    justify-content: center; /* I centered the items vertically within the footer. */
+    align-items: center; /* I centered the items horizontally. */
+    padding: 0px; /* I removed unnecessary padding. */
 }
 
-/* Footer Links Section  */
+/* Shared Text Styling for Footer Links */
+/* I grouped these styles to apply consistent formatting across all text in the footer. */
+footer p,
+.footer ul li a,
+.quick-links p,
+.quick-links ul li a,
+.social-links ul li a,
+.contact-email p,
+.contact-phone p {
+    font-size: 16px; /* I set a standard font size for readability. */
+    font-family: Arial, sans-serif; /* I chose a clean, sans-serif font for a modern look. */
+    color: white; /* I used white text to ensure contrast against the orange background. */
+}
+
+
+/* ============================================ */
+/* Footer Links Section */
+/* I used Flexbox to evenly space out the Quick Links, Follow Us, and Contact Us sections. */
+/* ============================================ */
 .footer-links {
-    display: flex; /* Uses Flexbox for layout */
-    justify-content: space-between; /* Spreads sections evenly */
-    align-items: flex-start; /* Aligns items to the top */
-    padding: 10px; /*Adds spacing inside */
-    max-width: 1200px; /* Limits the width */
-    margin: 0 auto; /* Centers the footer links */
-    flex-wrap: wrap; 
-    gap: 10px; /* Adds space between sections */
+    display: flex; /* I used Flexbox for layout alignment. */
+    justify-content: space-between; /* I spread sections evenly across the footer. */
+    align-items: flex-start; /* I aligned sections to the top of the container. */
+    padding: 10px; /* I added spacing inside the container for a balanced look. */
+    max-width: 1200px; /* I limited the total width for better alignment. */
+    margin: 0 auto; /* I centered the footer links within the page. */
+    flex-wrap: wrap; /* I allowed sections to wrap on smaller screens. */
+    gap: 330px; /* I added spacing between each section to create balance. */
 }
-
+/* Individual Footer Section Styling */
+/* I ensured all footer sections are evenly spaced and aligned. */
 .footer-links > div {
-    flex: 1; /* Ensure equal width for all sections */
-    padding: 10px; /* Add consistent padding */
+    flex: 1; /* Each section takes up equal space. */
+    padding: 10px; /* I added consistent padding inside each section. */
+    text-align: left; /* I aligned text to the left for consistency. */
 }
 
 /* Footer Section Titles */
+/* I emphasized the section titles to differentiate them from the content below. */
 .footer-links h3 {
-    margin-bottom: 10px; /* Add spacing below titles */
-    font-size: 20px; /* Adjust title font size */
-    font-weight: bold; /* Make titles stand out */
-    font-family: Arial, sans-serif; /* Fonts for Footer */
-    color: white;
+    margin-bottom: 10px; /* I added space below the titles to separate them from the content. */
+    font-size: 20px; /* I increased the font size for emphasis. */
+    font-weight: bold; /* I made the titles bold for visibility. */
+    font-family: Arial, sans-serif; /* I used the same font as the body text for consistency. */
+    color: white; /* I ensured the titles contrast well with the background. */
 }
 
 /* Footer Lists */
@@ -351,14 +376,9 @@ footer {
 
 .footer-links p{
     text-decoration: none; /* Remove underline from links */
-    color: white; /* White link text for contrast */
-    font-size: 16px; /* Match font size with other text */
-    font-family: Arial, sans-serif;
 }
 .footer-links ul li a {
     text-decoration: none; /* Remove underline from links */
-    color: white; /* White link text for contrast */
-    font-size: 16px; /* Match font size with other text */
     transition: color 0.3s ease; /* Add smooth hover effect */
 }
 
@@ -367,66 +387,60 @@ footer {
     color: #333; /* Change to dark gray on hover for readability */
 }
 
+/* ============================================ */
 /* Quick Links Section */
+/* I styled the Quick Links section to display the links clearly and neatly. */
+/* ============================================ */
 .quick-links ul {
-    list-style: none; /* Remove bullet points */
-    padding: 0; /* Remove default padding */
-    margin: 0; /* Remove default margin */
-    font-family: Arial, sans-serif; /* Set font once for all list items */
-    font-size: 16px; /* Set font size for all items */
-    color: white; /* Default text color */
+    list-style: none; /* I removed bullet points from the list. */
+    padding: 0; /* I eliminated default padding. */
+    margin: 0; /* I removed unnecessary margin. */
+    text-align: left; /* I aligned the text to the left for readability. */
 }
 
 .quick-links ul li {
-    margin-bottom: 10px; /* Add space below each list item */
+    margin-bottom: 10px; /* I added space below each list item for better spacing. */
 }
 
 .quick-links ul li a {
-    text-decoration: none; /* Remove underline */
-    color: white; /* Default text color */
-    transition: color 0.3s ease; /* Smooth hover effect */
+    text-decoration: none; /* I removed the underline from the links. */
+    transition: color 0.3s ease; /* I added a smooth hover effect for the links. */
 }
 
 .quick-links ul li a:hover {
-    color: #333; /* Change text color on hover to dark gray */
+    color: #333; /* I changed the text color on hover to a dark gray for interactivity. */
 }
 
-/* Social Icons */
+/* ============================================ */
+/* Social Links Section */
+/* I styled the social links section with icons and text neatly aligned. */
+/* ============================================ */
 .social-links .social-icon {
-    width: 20px; /* Adjust size of icons */
+    width: 20px; /* I adjusted the size of the icons. */
     height: 20px;
-    margin-right: 10px; /* Space between icon and text */
-    vertical-align: middle; /* Align with the text */
+    margin-right: 10px; /* I added space between the icon and the text. */
+    vertical-align: middle; /* I aligned the icon with the text. */
 }
 
-/* Social Links List */
 .social-links ul {
-    list-style: none; /* Remove bullet points */
+    list-style: none; /* I removed bullet points. */
     padding: 0;
     margin: 0;
 }
 
 .social-links ul li {
-    display: flex; /* Display icon and text in a row */
-    align-items: center; /* Align vertically */
-    margin-bottom: 10px; /* Add spacing between links */
+    display: flex; /* I displayed the icon and text in a row. */
+    align-items: center; /* I vertically aligned the icon and text. */
+    margin-bottom: 10px; /* I added spacing between each social link. */
 }
 
 .social-links ul li a {
-    text-decoration: none; /* Remove underline */
-    color: white; /* Match footer text color */
-    font-size: 16px; /* Font size */
-    transition: color 0.3s ease; /* Smooth hover effect */
+    text-decoration: none; /* I removed underlines. */
+    transition: color 0.3s ease; /* I added a smooth hover effect. */
 }
 
 .social-links ul li a:hover {
-    color: #333; /* Change text color on hover */
-}
-
-.social-icon {
-    width: 20px; /* Icon size */
-    height: 20px;
-    vertical-align: middle; /* Align with text */
+    color: #333; /* I changed the text color to dark gray on hover. */
 }
 
 /* Contact Links Section */
@@ -452,9 +466,6 @@ footer {
 /* Email Text */
 .contact-email p {
     margin: 0; /* Remove default margin */
-    font-size: 16px; /* Font size for the text */
-    font-family: Arial, sans-serif; /* Consistent font */
-    color: white /* Match the footer text color */
 }
 
 /* Phone Icon */
@@ -466,17 +477,11 @@ footer {
 /* Phone Text */
 .contact-phone p {
     margin: 0; /* Remove default margin */
-    font-size: 16px; /* Font size for the text */
-    font-family: Arial, sans-serif; /* Consistent font */
-    color: white; /* Match the footer text color */
 }
 
-/* Footer Copyright */
+/* Footer Copyright Section */
 footer p {
-    margin-top: 0px; /* Add space above copyright */
-    padding: 5px; 0;
-    font-size: 12px; /* Make the copyright text smaller */
-    color: #fff; /* Keep copyright text white */
+    margin-top: 0px; /* Remove space above copyright */
     font-weight: bold;
     text-align: center;
 }
