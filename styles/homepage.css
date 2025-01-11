@@ -1,0 +1,231 @@
+/* ============================================ */
+/* General Styles */
+/* ============================================ */
+body {
+    font-family: Arial, Helvetica, sans-serif; /* Clean and modern font */
+    line-height: 1.6; /* Improves readability */
+    color: #333; /* Dark gray text for readability */
+    margin: 0;
+    background-color: #f9f9f9; /* Light gray background for a soft look */
+}
+/* ============================================ */
+/* Header Navigation Bar */
+/* ============================================ */
+.home-nav-bar {
+    display: flex; /* Flexbox layout for horizontal alignment */
+    justify-content: space-between; /* Space out title and navigation */
+    align-items: center; /* Vertically center items */
+    padding: 15px 20px; /* Add spacing around the content */
+    background-color: #fff /* White background */
+    color: black; /* Black text to stand out */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add subtle shadow for depth */
+}
+
+.nav-bar-title {
+    display: flex;
+    align-items: center;
+    font-size: 1.5em; /* Slightly larger for emphasis */
+    font-weight: bold;
+}
+
+.nav-bar-title .logo {
+    width: 40px; /* Fixed size for the logo */
+    height: 40px;
+    margin-right: 10px; /* Space between the logo and text */
+}
+
+.navigation .nav-links {
+    list-style: none; /* Remove bullets */
+    display: flex; /* Flex layout for horizontal links */
+    gap: 15px; /* Space between links */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+}
+
+.navigation .nav-links li a {
+    text-decoration: none; /* Remove underline */
+    color: black; /* Black text */
+    font-weight: bold;
+    transition: color 0.3s ease; /* Smooth hover effect */
+}
+
+.navigation .nav-links li a:hover {
+    color: #f39c12; /* Orange hover effect */
+}
+/* ============================================ */
+/* Hero Section */
+/* ============================================ */
+.hero {
+    position: relative;
+    background-image: url('../img/about-4.svg'); /* Add your background image here */
+    background-size: cover; /* Ensure image covers the entire section */
+    background-position: center;
+    text-align: center; /* Center-align text */
+    color: #fff; /* White text for contrast */
+    padding: 100px 20px; /* Large padding for spacing */
+    height: 400px; /* Fixed height for the section */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+}
+
+/* Hero Content Box */
+.hero-content-box {
+    background-color: rgba(255, 255, 255, 0.6); /* Semi-transparent white background */
+    padding: 20px 30px; /* Adds spacing inside the box */
+    border-radius: 5px; /* Gives the box rounded corners */
+    text-align: center; /* Centers text inside the box */
+    max-width: 600px; /* Limits the width of the box */
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+  }
+  
+  /* Hero Heading */
+  .hero-content-box h1 {
+    font-size: 2.0rem; /* Adjust font size */
+    color: black; /* Black text */
+    margin-bottom: 10px; /* Space below the heading */
+  }
+  
+  /* Hero Paragraph */
+  .hero-content-box p {
+    font-size: 1.2rem; /* Slightly smaller font for the paragraph */
+    color: #060606; /* Gray text for contrast */
+    margin-bottom: 20px; /* Space below the paragraph */
+  }
+  
+  /* Hero Button */
+  .hero-content-box .btn-main {
+    background-color: #f39c12; /* Orange button background */
+    color: #fff; /* White text */
+    padding: 10px 20px; /* Adjust padding */
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px; /* Rounded button corners */
+    font-size: 1rem; /* Adjust font size */
+    transition: background-color 0.3s ease; /* Adds hover effect */
+  }
+  
+  /* Button Hover Effect */
+  .hero-content-box .btn-main:hover {
+    background-color: #d8850d; /* Darker orange when hovered */
+  }
+
+/* ============================================ */
+/* Featured Sections */
+/* ============================================ */
+.featured {
+    text-align: center; /* Center-align section text */
+    padding: 60px 20px;
+    background-color: #fff; /* White background for contrast */
+}
+
+.featured h2 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.features {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Allow cards to stack on smaller screens */
+    gap: 30px; /* Space between cards */
+}
+
+.feature-card {
+    background-color: #f9f9f9; /* Light gray for a clean look */
+    border: 1px solid #ddd; /* Subtle border for structure */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+    padding: 20px;
+    text-align: center;
+    width: 300px; /* Fixed width for cards */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+}
+
+.feature-card:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
+}
+
+.feature-card img {
+    width: 100%; /* Make images fill the card */
+    border-radius: 10px; /* Match card corners */
+    margin-bottom: 15px;
+}
+
+.feature-card h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.feature-card p {
+    font-size: 1em;
+    color: #666; /* Softer gray for descriptions */
+    margin-bottom: 20px;
+}
+
+.feature-card .btn-secondary {
+    background-color: #f39c12;
+    color: #fff;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.feature-card .btn-secondary:hover {
+    background-color: #e67e22;
+}
+/* ============================================ */
+/* Footer Section */
+/* ============================================ */
+footer {
+    background-color: #000; /* Black background for contrast */
+    color: #fff; /* White text */
+    padding: 20px 0;
+    text-align: center; /* Center-align footer content */
+}
+
+footer .footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+footer h3 {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+footer ul {
+    list-style: none; /* Remove default bullets */
+    padding: 0;
+}
+
+footer ul li {
+    margin-bottom: 5px;
+}
+
+footer ul li a {
+    color: #fff; /* White text for links */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s ease;
+}
+
+footer ul li a:hover {
+    color: #f39c12; /* Orange hover effect */
+}
+
+footer p {
+    margin: 20px 0 0;
+    font-size: 0.9em;
+}
