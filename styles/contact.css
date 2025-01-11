@@ -17,7 +17,7 @@ body {
     font-family: Arial, Helvetica, sans-serif; /* Sets a clean, sans-serif font */
     line-height: 1.6; /* Improves text readability */
     color: #333; /* Sets the text color to a dark gray */
-    background-color: #f9f9f9; /* Adds a light gray background for contrast */
+    background-color: #fff; /* A white background keeps the site feeling clean and soft. */
 }
 
 /* ============================================*/
@@ -25,15 +25,16 @@ body {
 /* I designed the navigation bar to stay consistent across the site. */
 /* ============================================*/
 
-.nav-bar {
+.contact-nav-bar {
     display: flex; /* Uses Flexbox for easy layout alignment */
     justify-content: space-between; /* Positions elements on opposite sides */
     align-items: center; /* Vertically centers the items */
     padding: 15px 20px; /* Adds space inside the navigation bar */
     background-color: #fff; /* White background for a clean look */
-    border-bottom: 1px solid #ddd; /* Subtle border below the navbar */
+    color: black; /* Matches the body text color */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Adds depth with a light shadow */
 }
+
 
 /* ============================================*/
 /* Navigation Bar Title */
@@ -45,7 +46,6 @@ body {
     align-items: center; /* Vertically centers the logo and text */
     font-size: 1.5em; /* Makes the title larger for emphasis */
     font-weight: bold; /* Adds visual weight to the text */
-    color: black; /* Matches the body text color */
 }
 
 .nav-bar-title .logo {
@@ -53,6 +53,25 @@ body {
     height: 40px; /* Matches the logo's width */
     margin-right: 10px; /* Adds space between the logo and the text */
 }
+.navigation .nav-links {
+    list-style: none; /* Removing bullets for a cleaner navigation menu. */
+    display: flex; /* Flexbox helps align links horizontally. */
+    gap: 15px; /* I spaced out the links evenly for readability. */
+    padding: 0px; /* Removed  padding for a clean layout. */
+    margin: 0px; /* Removed default margin for alignment. */
+}
+
+.navigation .nav-links li a {
+    text-decoration: none; /* I avoided underlines for a modern look. */
+    color: black; /* Black text keeps the design simple and professional. */
+    font-weight: bold;
+    transition: color 0.3s ease; /* Adding a hover effect makes the navigation interactive. */
+}
+
+.navigation .nav-links li a:hover {
+    color: #f39c12; /* The hover effect changes the text color to orange, matching the theme. */
+}
+
 
 /* ============================================*/
 /* Navigation Links */
@@ -62,7 +81,9 @@ body {
 .nav-links {
     list-style: none; /* Removes default bullet points */
     display: flex; /* Aligns links horizontally */
-    gap: 20px; /* Adds spacing between links */
+    gap: 15px; /* Adds spacing between links */
+    padding: 0px; /* Removed  padding for a clean layout. */
+    margin: 0px; /* Removed default margin for alignment. */
 }
 
 .nav-links li a {
