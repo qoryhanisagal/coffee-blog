@@ -6,7 +6,7 @@ body {
     line-height: 1.6; /* Adding this ensures text is spaced for easy reading. */
     color: #333; /* I picked a dark gray for text because it’s softer on the eyes than black. */
     margin: 0; /* Removed the default margin for complete layout control. */
-    background-color: #fff; /* A light gray background keeps the site feeling clean and soft. */
+    background-color: #fff; /* A white background keeps the site feeling clean and soft. */
 }
 
 /* ============================================ */
@@ -92,7 +92,7 @@ body {
 /* Hero Paragraph */
 .hero-content-box p {
     font-size: 1.2rem; /* Slightly smaller font for secondary text. */
-    color: #060606; /* A softer gray for contrast. */
+    color: #060606; /* A softer black for contrast. */
     margin-bottom: 20px; /* Space below the paragraph for separation. */
 }
 
@@ -124,6 +124,9 @@ body {
     color: black;
     margin-bottom: 10px; /* Applied so each section can follow the other */
 }
+/* ============================================ */
+/* Blog Card Styling */
+/* ============================================ */
 .blog-list{
     margin-top: 0px;
     display: flex;
@@ -206,7 +209,7 @@ body {
 .workshop-list {
     display: flex; /* Flexbox for horizontal alignment */
     justify-content: center; /* Center the cards */
-    gap: 30px; /* Space between cards */
+    gap: 90px; /* Space between cards */
     flex-wrap: wrap; /* Allow wrapping for smaller screens */
 }
 
@@ -218,7 +221,7 @@ body {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow */
     padding: 20px;
     text-align: left;
-    width: 900px; /* Fixed width for cards */
+    width: 800px; /* Fixed width for cards */
     transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
 }
 
@@ -237,18 +240,111 @@ body {
     font-size: 1rem;
     color: #555; /* Softer gray for descriptions */
     margin-bottom: 10px;
+    font-weight: normal;
+}
+/* ============================================ */
+/* Workshop Details */
+/* ============================================ */
+.workshop-details {
+    display: flex; /* Use Flexbox to align items in a row */
+    justify-content: space-between; /* Space out each item evenly */
+    gap: 20px; /* Add spacing between items */
+    margin: 5px 0; /* Add some spacing around the details section */
 }
 
+.workshop-details span {
+    font-size: 1rem; /* Adjust font size as needed */
+}
+
+.workshop-details span strong {
+    font-weight: bold; /* Ensure the labels are bold */
+}
+
+.workshop-details span {
+    font-weight: normal; /* Ensure the values are normal weight */
+}
+/* ============================================ */
+/* Course Details */
+/* ============================================ */
+.course-details {
+    display: flex; /* Use Flexbox to align items in a row */
+    justify-content: space-between; /* Space out each item evenly */
+    gap: 20px; /* Add spacing between items */
+    margin: 5px 0; /* Add some spacing around the details section */
+}
+
+.course-details span {
+    font-size: 1rem; /* Adjust font size as needed */
+}
+
+.course-details span strong {
+    font-weight: bold; /* Ensure the labels are bold */
+}
+
+.course-details span {
+    font-weight: normal; /* Ensure the values are normal weight */
+}
 .workshop-card .date {
-    font-size: 0.9rem;
+    font-size: 1rem;
     color: #d67c00; /* Orange color for the date */
     font-weight: bold;
 }
+/* ============================================ */
+/* Button container */
+/* ============================================ */
+.seats-and-button-container {
+    display: flex; /* Use Flexbox for alignment */
+    justify-content: space-between; /* Place seats on the left and button on the right */
+    align-items: center; /* Vertically align seats and more buttons */
+    margin-top: 10px; /* Optional: Add spacing above the button */
+}
+/* ============================================ */
+/* Button Contents */
+/* ============================================ */
+.btn {
+    background-color: #f39c12; /* Orange background to match branding */
+    color: white; /* White text for contrast */
+    padding: 10px 20px; /* Add space inside the button */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    text-align: center; /* Center-align text */
+    font-weight: bold; /* Make the text bold */
+    text-decoration: none; /* Remove underline (for <a>) */
+    display: inline-block; /* Ensure proper box-model behavior */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Add smooth hover effects */
+}
+.btn:hover {
+    background-color: #e67e22; /* Slightly darker orange on hover */
+    transform: scale(1.05); /* Slightly enlarge the button on hover */
+}
+
+.btn-more {
+    background-color: #f39c12; /* Your button color */
+    color: #fff; /* Button text color */
+    padding: 10px 20px; /* Button padding */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Bold text */
+    cursor: pointer; /* Pointer cursor */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth effects */
+}
+
+.btn-more:hover {
+    background-color: #e67e22; /* Darker orange on hover */
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+.btn-more:active {
+    background-color: #d35400; /* Even darker on click */
+    transform: scale(0.95); /* Slight shrink on click */
+}
+
 
 /* ============================================ */
 /* Footer Section */
 /* ============================================ */
-/* Footer General Styles */
 .home-footer {
     margin-top: 0;
     background-color: #f39c12; /* Orange background */
@@ -259,8 +355,9 @@ body {
     align-items: center; /* Center align items horizontally */
     text-align: center; /* Center all text */
 }
-
+/* ============================================ */
 /* Footer Content Layout */
+/* ============================================ */
 .home-footer-content {
     display: flex;
     justify-content: space-between; /* Space out sections */
@@ -271,8 +368,9 @@ body {
     margin: 0 auto;
     padding: 20px; /* Add inner spacing */
 }
-
+/* ============================================ */
 /* Contact Info Styles */
+/* ============================================ */
 .home-contact-info {
     display: flex;
     flex-direction: column; /* Stack items vertically */
@@ -303,8 +401,9 @@ body {
     height: 20px;
     margin-right: 10px; /* Space between icon and text */
 }
-
+/* ============================================ */
 /* Social Icons Styles */
+/* ============================================ */
 .home-social-icons {
     display: flex; /* Horizontal alignment */
     justify-content: center;
@@ -321,8 +420,9 @@ body {
 .home-social-icons a img:hover {
     transform: scale(1.1); /* Enlarge icon slightly on hover */
 }
-
+/* ============================================ */
 /* Copyright Styles */
+/* ============================================ */
 .home-copyright {
     margin-top: -40px; /* Space above copyright */
     font-size: 0.9rem;
