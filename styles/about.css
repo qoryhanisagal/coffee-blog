@@ -69,24 +69,31 @@ body {
 /* ============================================ */
 
 .about-intro {
-    text-align: center; /* I centered the content to make it look neat and focused. */
-    padding: 40px 20px; /* The padding ensures the content has breathing room. */
-    margin: 20px auto; /* This centers the intro section horizontally on the page. */
-    max-width: 800px; /* I constrained the width to improve readability, especially on larger screens. */
-    background: none; /* I left the background transparent so it blends seamlessly with the page. */
-    border: none; /* Removing borders ensures the section looks clean and simple. */
-    box-shadow: none; /* No shadows are necessary since this is a flat section. */
+    position: relative; /* I used relative positioning because it allows me to control the layout inside this section, like the overlay effect, without affecting other elements on the page. */
+    text-align: center; /* I centered the text because it gives the section a clean, professional look. */
+    padding: 60px 20px; /* I added padding to ensure there’s enough space around the content so it doesn’t feel cramped. */
+    margin: 0 auto; /* This centers the entire section horizontally within the page. */
+    width: 100%; /* I set the width to 100% to make sure this section spans across the entire page. */
+    height: 300px; /* I gave it a fixed height so it has a consistent size across different screens. */
+    color: #fff; /* I made the text color white so it stands out against the darker overlay and background image. */
+    font-size: 1.2em; /* I increased the font size slightly to make the text more readable. */
+    background-image: url('../img/about-4.svg'); /* This is where I applied the background image directly. It makes updates easier and keeps my HTML clean. */
+    background-size: center; /* I used 'center' here to ensure the most important part of the image is visible within the section. */
+    background-position: center center; /* I positioned the image right in the middle of the section, both horizontally and vertically, to create a balanced look. */
+    z-index: 1; /* I set the z-index to make sure this section appears above other elements on the page, like background layers. */
+    /* Overlay effect */
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.6); /* This adds a semi-transparent dark overlay to the section, helping the text stand out while still showing the background image. */
 }
 
 .about-intro h1 {
-    margin-bottom: 20px; /* Adding space below the title makes it visually distinct from the paragraph. */
-    color: #f39c12; /* The orange color ties into the brand and draws attention to the title. */
-    font-size: 2.5em; /* A larger font size makes the title stand out. */
+    margin-bottom: 20px; /* I added some space below the title to separate it visually from the paragraph. */
+    color: #f39c12; /* I chose orange for the title because it matches the brand and draws attention to it. */
+    font-size: 2.5em; /* I made the title larger to make it stand out as the main focus of this section. */
 }
 
 .about-intro p {
-    font-size: 1.1em; /* This font size is slightly larger than normal text for better readability. */
-    color: #555; /* A lighter gray for the text ensures it’s easy on the eyes. */
+    font-size: 1.1em; /* This font size makes the paragraph easier to read without being too small or too large. */
+    color: white; /* I kept the paragraph text white for good contrast against the background. */
 }
 
 /* ============================================ */
@@ -101,7 +108,7 @@ body {
 
 .about-team h2 {
     color: #f39c12; /* The orange color ensures the section title catches the user's attention. */
-    font-size: 2em; /* A prominent font size for the title ensures it stands out. */
+    font-size: 2.5em; /* A prominent font size for the title ensures it stands out. */
     margin-bottom: 20px; /* I added spacing below the title to separate it from the team cards. */
 }
 
@@ -151,10 +158,10 @@ body {
 /* ============================================ */
 
 .about-mission {
-    text-align: center; /* I center-aligned the content to keep it visually balanced. */
+    text-align: justify; /* I changed the text alignment to "justify" so the text stretches out and aligns neatly on both sides, similar to the "About Us" section. */
     padding: 40px 20px; /* I added padding to give the section breathing room. */
     margin: 20px auto; /* I centered the section horizontally on the page. */
-    max-width: 800px; /* I constrained the width so the text stays easy to read. */
+    max-width: 1000px; /* I increased the max-width so the text spans wider, resembling the "About Us" section's formatting. */
     background: none; /* I removed any background color to keep it clean. */
     border: none; /* I removed borders for a minimalistic look. */
     box-shadow: none; /* I took away any shadows to match the clean design. */
@@ -168,10 +175,11 @@ body {
 }
 
 .about-mission p {
-    font-size: 1.1em; /* I set the font size to ensure the text is easy to read. */
+    font-size: 1.2em; /* I slightly increased the font size for better readability across a wider width. */
     color: #555; /* I used a softer gray for the text to avoid harsh contrasts. */
-    line-height: 1.6; /* I increased line spacing to improve readability. */
+    line-height: 1.8; /* Added more line spacing to maintain readability for a stretched layout. */
 }
+
 /* ============================================ */
 /* Footer Styles */
 /* Here, I styled the footer to make it visually appealing and functional. */
