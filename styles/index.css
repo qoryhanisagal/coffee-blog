@@ -24,9 +24,9 @@ body {
 
 .nav-bar-title {
     display: flex; /* I used Flexbox here too for aligning the logo and text side-by-side. */
-    align-items: center;
+    align-items: center; /* Vertically centers the logo and text */
     font-size: 1.5em; /* The title is slightly larger to draw attention. */
-    font-weight: bold; 
+    font-weight: bold; /* Adds visual weight to the text */
 }
 
 .nav-bar-title .logo {
