@@ -25,8 +25,8 @@ body {
 .nav-bar-title {
     display: flex; /* I used Flexbox here too for aligning the logo and text side-by-side. */
     align-items: center;
-    font-size: 1.5em; /* The title is slightly larger for emphasis. */
-    font-weight: bold; /* Bold text makes the title stand out. */
+    font-size: 1.5em; /* The title is slightly larger to draw attention. */
+    font-weight: bold; 
 }
 
 .nav-bar-title .logo {
@@ -39,8 +39,8 @@ body {
     list-style: none; /* Removing bullets for a cleaner navigation menu. */
     display: flex; /* Flexbox helps align links horizontally. */
     gap: 15px; /* I spaced out the links evenly for readability. */
-    padding: 0; /* Removed default padding for a clean layout. */
-    margin: 0; /* Removed default margin for alignment. */
+    padding: 0px; /* Removed  padding for a clean layout. */
+    margin: 0px; /* Removed default margin for alignment. */
 }
 
 .navigation .nav-links li a {
@@ -122,19 +122,19 @@ body {
 .featured-blog h2 {
     font-size: 1.5em;
     color: black;
-    margin-bottom: 10px;
+    margin-bottom: 10px; /* Applied so each section can follow the other */
 }
 .blog-list{
     margin-top: 0px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-evenly; /* I spaced the blog cards evenly */
     flex-wrap: wrap; /* Allow cards to stack on smaller screens */
-    gap: 5px; /* Space between cards */
+    gap: 0px; /* Space between cards */
 }
 
 .blog-card {
     display: flex;
-    flex-direction:  column;
+    flex-direction:  column; /* Stacks the image, text, and button vertically. 
     justify-content: space-between;
     background-color: #f9f9f9; /* Light gray for a clean look */
     border: 1px; solid #dddd
@@ -147,8 +147,8 @@ body {
 }
 .blog-card h3 {
     font-size: 1.1em;
-    margin-bottom: 10px;
-    color: #333;
+    margin-bottom: 10px; /* I adjusted the margin so the card would move up */
+    color:Black;
 }
 .blog-card:hover {
     transform: translateY(-5px); /* Slight lift on hover */
@@ -156,9 +156,9 @@ body {
 }
 
 .blog-card img {
-    width: 100%; /* Ensures the image stretches to fill the width of the card */
+    width: 100%; /* Allows the image stretches to fill the width of the card */
     height: 200px; /* Sets a fixed height for uniformity */
-    object-fit: cover; /* Ensures the image covers the area without distortion */
+    object-fit: cover; /* Allows the image covers the area without distortion */
     object-position: center; /* Keeps the image centered */
     border-radius: 10px; /* Keeps corners consistent with the card's style */
     margin-bottom: 15px; /* Adds space below the image */
@@ -166,7 +166,7 @@ body {
 
 .blog-card p {
     font-size: 1em;
-    color:grey; /* Softer gray for descriptions */
+    color: #333 /* Softer gray for descriptions */
     margin-bottom: 10px;
 }
 .blog-card .btn-secondary {
@@ -254,7 +254,7 @@ body {
     background-color: #f39c12; /* Orange background */
     color: #fff; /* White text */
     padding: 20px 0;
-    display: flex;
+    display: flex; /* Flexbox helps me arrange the footer layput */
     flex-direction: column; /* Stack items vertically */
     align-items: center; /* Center align items horizontally */
     text-align: center; /* Center all text */
