@@ -189,107 +189,143 @@ body {
 /* Upcoming Workshops Section */
 /* ============================================ */
 .upcoming-workshops {
-    margin-top: 40px;
-background-color: #f2d4b4; 
-padding: 50px 30px; /* Space around the section */
-text-align: left;
+    margin-top: 0px;
+    background-color: #f2d4b4; 
+    padding: 30px; /* Space around the section */
+    text-align: left;
+    margin-bottom: 0px;
 }
 
 .upcoming-workshops h2 {
-font-size: 1.5rem; /* Slightly larger font for the heading */
-color: black; /* Dark text for contrast */
-margin-bottom: 20px;
+    margin-top: -20px;
+    font-size: 1.5rem; /* Slightly larger font for the heading */
+    color: black; /* Dark text for contrast */
+    margin-bottom: 20px;
 }
 
 .workshop-list {
-display: flex; /* Flexbox for horizontal alignment */
-justify-content: space-evenly; /* Center the cards */
-gap: 20px; /* Space between cards */
-flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    display: flex; /* Flexbox for horizontal alignment */
+    justify-content: center; /* Center the cards */
+    gap: 30px; /* Space between cards */
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
 }
 
 .workshop-card {
-background-color: #fff; /* White background for the cards */
-border: 1px solid #ddd; /* Subtle border for structure */
-border-radius: 5px; /* Rounded corners */
-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-padding: 20px;
-text-align: left;
-width: 800px; /* Fixed width for cards */
-transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+    margin-top: -20px;
+    background-color: #fff; /* White background for the cards */
+    border: 1px solid #ddd; /* Subtle border for structure */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    padding: 20px;
+    text-align: left;
+    width: 900px; /* Fixed width for cards */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
 }
 
 .workshop-card:hover {
-transform: translateY(-5px); /* Slight lift on hover */
-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+    transform: translateY(-5px); /* Slight lift on hover */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
 }
 
 .workshop-card h3 {
-font-size: 1.5rem;
-color: #333;
-margin-bottom: 10px;
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
 }
 
 .workshop-card p {
-font-size: 1rem;
-color: #555; /* Softer gray for descriptions */
-margin-bottom: 10px;
+    font-size: 1rem;
+    color: #555; /* Softer gray for descriptions */
+    margin-bottom: 10px;
 }
 
 .workshop-card .date {
-font-size: 0.9rem;
-color: #d67c00; /* Orange color for the date */
-font-weight: bold;
+    font-size: 0.9rem;
+    color: #d67c00; /* Orange color for the date */
+    font-weight: bold;
 }
 
 /* ============================================ */
 /* Footer Section */
 /* ============================================ */
-.footer {
-background-color: #f39c12; /* Orange background */
-color: #fff; /* White text */
-padding: 20px 0;
-text-align: left; /* Center-align footer content */
-}
-.footer-content {
+/* Footer General Styles */
+.home-footer {
+    margin-top: 0;
+    background-color: #f39c12; /* Orange background */
+    color: #fff; /* White text */
+    padding: 20px 0;
     display: flex;
-    justify-content: space-between; /* Space between contact and social icons */
-    align-items: left;
-    flex-wrap: wrap; /* Allow wrapping for smaller screens */
-    gap: 20px; /* Space between sections on smaller devices */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center align items horizontally */
+    text-align: center; /* Center all text */
+}
+
+/* Footer Content Layout */
+.home-footer-content {
+    display: flex;
+    justify-content: space-between; /* Space out sections */
+    align-items: flex-start; /* Align items to the top */
+    flex-wrap: wrap; /* Wrap content on smaller screens */
     max-width: 1200px;
+    width: 100%;
     margin: 0 auto;
-    padding: 0 20px;
-    }
-    
-    .contact-info h3 {
-    margin-bottom: 10px;
+    padding: 20px; /* Add inner spacing */
+}
+
+/* Contact Info Styles */
+.home-contact-info {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    gap: 10px; /* Space between items */
+}
+
+.home-contact-info h3 {
     font-size: 1.2em;
-    }
-    
-    .contact-info p {
-    margin: 5px 0;
-    font-size: 1em;
-    }
-    
-    .contact-info a {
-    color: #fff; /* White for email links */
-    text-decoration: none; /* Remove underline */
+    margin-bottom: 10px;
+    color: white;
+    text-align: left;
+}
+
+.home-contact-info p,
+.home-contact-info a {
+    display: flex; /* Align icon and text in a row */
+    align-items: center; /* Vertically align icon with text */
     font-weight: bold;
-    }
-    
-    .contact-info a:hover {
-    text-decoration: underline; /* Underline on hover */
-    }
-    
-    .social-icons a {
-    color: #fff; /* White icons */
-    margin: 0 10px;
-    font-size: 1.5em;
-    text-decoration: none; /* Remove underline */
-    transition: color 0.3s ease;
-    }
-    
-    .social-icons a:hover {
-    color: #000; /* Change to black on hover */
-    }
+    color: #fff;
+    margin: 0;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+.home-contact-info p img,
+.home-contact-info a img {
+    width: 20px; /* Icon size */
+    height: 20px;
+    margin-right: 10px; /* Space between icon and text */
+}
+
+/* Social Icons Styles */
+.home-social-icons {
+    display: flex; /* Horizontal alignment */
+    justify-content: center;
+    gap: 20px; /* Add space between icons */
+    margin-top: 70px; /* Add spacing above social icons */
+}
+
+.home-social-icons a img {
+    width: 24px; /* Icon size */
+    height: 24px;
+    transition: transform 0.3s ease; /* Smooth hover effect */
+}
+
+.home-social-icons a img:hover {
+    transform: scale(1.1); /* Enlarge icon slightly on hover */
+}
+
+/* Copyright Styles */
+.home-copyright {
+    margin-top: -40px; /* Space above copyright */
+    font-size: 0.9rem;
+    color: #fff; /* White text */
+    text-align: center;
+}
