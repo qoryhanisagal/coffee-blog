@@ -2,172 +2,175 @@
 /* General Styles */
 /* ============================================ */
 body {
-    font-family: Arial, Helvetica, sans-serif; /* Clean and modern font */
-    line-height: 1.6; /* Improves readability */
-    color: #333; /* Dark gray text for readability */
-    margin: 0;
-    background-color: #f9f9f9; /* Light gray background for a soft look */
+    font-family: Arial, Helvetica, sans-serif; /* I chose clean and modern fonts for simplicity and readability. */
+    line-height: 1.6; /* Adding this ensures text is spaced for easy reading. */
+    color: #333; /* I picked a dark gray for text because it’s softer on the eyes than black. */
+    margin: 0; /* Removed the default margin for complete layout control. */
+    background-color: #fff; /* A light gray background keeps the site feeling clean and soft. */
 }
+
 /* ============================================ */
 /* Header Navigation Bar */
 /* ============================================ */
 .home-nav-bar {
-    display: flex; /* Flexbox layout for horizontal alignment */
-    justify-content: space-between; /* Space out title and navigation */
-    align-items: center; /* Vertically center items */
-    padding: 15px 20px; /* Add spacing around the content */
-    background-color: #fff /* White background */
-    color: black; /* Black text to stand out */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add subtle shadow for depth */
+    display: flex; /* I used Flexbox to align navigation elements horizontally. */
+    justify-content: space-between; /* This spaces the title and links to opposite sides. */
+    align-items: center; /* Vertically centers the items in the nav bar. */
+    padding: 15px 20px; /* I added padding for breathing room around the content. */
+    background-color: #fff; /* A white background ensures clarity. */
+    color: black; /* Black text creates a clean contrast. */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* A subtle shadow gives the header depth. */
 }
 
 .nav-bar-title {
-    display: flex;
+    display: flex; /* I used Flexbox here too for aligning the logo and text side-by-side. */
     align-items: center;
-    font-size: 1.5em; /* Slightly larger for emphasis */
-    font-weight: bold;
+    font-size: 1.5em; /* The title is slightly larger for emphasis. */
+    font-weight: bold; /* Bold text makes the title stand out. */
 }
 
 .nav-bar-title .logo {
-    width: 40px; /* Fixed size for the logo */
+    width: 40px; /* I kept the logo size consistent for a polished look. */
     height: 40px;
-    margin-right: 10px; /* Space between the logo and text */
+    margin-right: 10px; /* Space between the logo and the text ensures it’s not crowded. */
 }
 
 .navigation .nav-links {
-    list-style: none; /* Remove bullets */
-    display: flex; /* Flex layout for horizontal links */
-    gap: 15px; /* Space between links */
-    padding: 0; /* Remove default padding */
-    margin: 0; /* Remove default margin */
+    list-style: none; /* Removing bullets for a cleaner navigation menu. */
+    display: flex; /* Flexbox helps align links horizontally. */
+    gap: 15px; /* I spaced out the links evenly for readability. */
+    padding: 0; /* Removed default padding for a clean layout. */
+    margin: 0; /* Removed default margin for alignment. */
 }
 
 .navigation .nav-links li a {
-    text-decoration: none; /* Remove underline */
-    color: black; /* Black text */
+    text-decoration: none; /* I avoided underlines for a modern look. */
+    color: black; /* Black text keeps the design simple and professional. */
     font-weight: bold;
-    transition: color 0.3s ease; /* Smooth hover effect */
+    transition: color 0.3s ease; /* Adding a hover effect makes the navigation interactive. */
 }
 
 .navigation .nav-links li a:hover {
-    color: #f39c12; /* Orange hover effect */
+    color: #f39c12; /* The hover effect changes the text color to orange, matching the theme. */
 }
+
 /* ============================================ */
 /* Hero Section */
 /* ============================================ */
 .hero {
-    position: relative;
-    background-image: url('../img/about-4.svg'); /* Add your background image here */
-    background-size: cover; /* Ensure image covers the entire section */
-    background-position: center;
-    text-align: center; /* Center-align text */
-    color: #fff; /* White text for contrast */
-    padding: 100px 20px; /* Large padding for spacing */
-    height: 400px; /* Fixed height for the section */
-    display: flex;
-    flex-direction: column;
-    justify-content: center; /* Center vertically */
-    align-items: center; /* Center horizontally */
+    position: relative; /* I set this to position elements relative to the section. */
+    background-image: url('../img/about-4.svg'); /* This is where I added the background image. */
+    background-size: cover; /* Ensures the image covers the entire section. */
+    background-position: center; /* Centers the image for balance. */
+    text-align: center; /* Centers the content within the section. */
+    color: #fff; /* White text contrasts well against the background. */
+    padding: 100px 20px; /* Added ample padding for spacing. */
+    height: 400px; /* I set a fixed height for a consistent design. */
+    display: flex; /* Flexbox ensures the content is vertically centered. */
+    flex-direction: column; /* Stacks content vertically. */
+    justify-content: center; /* Centers content along the vertical axis. */
+    align-items: center; /* Centers content horizontally. */
 }
 
 /* Hero Content Box */
 .hero-content-box {
-    background-color: rgba(255, 255, 255, 0.6); /* Semi-transparent white background */
-    padding: 20px 30px; /* Adds spacing inside the box */
-    border-radius: 5px; /* Gives the box rounded corners */
-    text-align: center; /* Centers text inside the box */
-    max-width: 600px; /* Limits the width of the box */
-    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
-  }
-  
-  /* Hero Heading */
-  .hero-content-box h1 {
-    font-size: 2.0rem; /* Adjust font size */
-    color: black; /* Black text */
-    margin-bottom: 10px; /* Space below the heading */
-  }
-  
-  /* Hero Paragraph */
-  .hero-content-box p {
-    font-size: 1.2rem; /* Slightly smaller font for the paragraph */
-    color: #060606; /* Gray text for contrast */
-    margin-bottom: 20px; /* Space below the paragraph */
-  }
-  
-  /* Hero Button */
-  .hero-content-box .btn-main {
-    background-color: #f39c12; /* Orange button background */
-    color: #fff; /* White text */
-    padding: 10px 20px; /* Adjust padding */
-    text-decoration: none; /* Remove underline */
-    border-radius: 5px; /* Rounded button corners */
-    font-size: 1rem; /* Adjust font size */
-    transition: background-color 0.3s ease; /* Adds hover effect */
-  }
-  
-  /* Button Hover Effect */
-  .hero-content-box .btn-main:hover {
-    background-color: #d8850d; /* Darker orange when hovered */
-  }
+    background-color: rgba(255, 255, 255, 0.6); /* A semi-transparent white box makes the text readable. */
+    padding: 20px 30px; /* I added padding to give the content room to breathe. */
+    border-radius: 5px; /* Rounded corners create a softer, modern look. */
+    text-align: center; /* Centers text inside the box. */
+    max-width: 600px; /* Limits the box width for readability. */
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1); /* Adds depth with a soft shadow. */
+}
 
+/* Hero Heading */
+.hero-content-box h1 {
+    font-size: 2.0rem; /* I made the heading larger for emphasis. */
+    color: black; /* Black text contrasts with the semi-transparent background. */
+    margin-bottom: 10px; /* Added spacing below the heading for balance. */
+}
+
+/* Hero Paragraph */
+.hero-content-box p {
+    font-size: 1.2rem; /* Slightly smaller font for secondary text. */
+    color: #060606; /* A softer gray for contrast. */
+    margin-bottom: 20px; /* Space below the paragraph for separation. */
+}
+
+/* Hero Button */
+.hero-content-box .btn-main {
+    background-color: #f39c12; /* I used orange to match the brand’s theme. */
+    color: #fff; /* White text pops against the orange background. */
+    padding: 10px 20px; /* Adjusted padding for a balanced look. */
+    text-decoration: none; /* Removed underline for a clean design. */
+    border-radius: 5px; /* Rounded corners give the button a modern feel. */
+    font-size: 1rem; /* Font size ensures readability. */
+    transition: background-color 0.3s ease; /* Added a hover effect for better interactivity. */
+}
+
+/* Button Hover Effect */
+.hero-content-box .btn-main:hover {
+    background-color: #d8850d; /* Darker orange makes the hover state clear. */
+}
 /* ============================================ */
-/* Featured Sections */
+/* Featured Blogs Sections */
 /* ============================================ */
-.featured {
-    text-align: center; /* Center-align section text */
-    padding: 60px 20px;
+.featured-blog{
+    text-align: left; /* Center-align section text */
+    padding: 10px;
     background-color: #fff; /* White background for contrast */
 }
-
-.featured h2 {
-    font-size: 2.5em;
-    color: #333;
-    margin-bottom: 20px;
+.featured-blog h2 {
+    font-size: 1.5em;
+    color: black;
+    margin-bottom: 10px;
 }
-
-.features {
+.blog-list{
+    margin-top: 0px;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     flex-wrap: wrap; /* Allow cards to stack on smaller screens */
-    gap: 30px; /* Space between cards */
+    gap: 5px; /* Space between cards */
 }
 
-.feature-card {
+.blog-card {
+    display: flex;
+    flex-direction:  column;
+    justify-content: space-between;
     background-color: #f9f9f9; /* Light gray for a clean look */
-    border: 1px solid #ddd; /* Subtle border for structure */
-    border-radius: 10px; /* Rounded corners */
+    border: 1px; solid #dddd
+    border-radius: 5px; /* Rounded corners */
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
     padding: 20px;
-    text-align: center;
-    width: 300px; /* Fixed width for cards */
+    text-align: left;
+    width: 500px; /* Fixed width for cards */
     transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
 }
-
-.feature-card:hover {
+.blog-card h3 {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+    color: #333;
+}
+.blog-card:hover {
     transform: translateY(-5px); /* Slight lift on hover */
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
 }
 
-.feature-card img {
-    width: 100%; /* Make images fill the card */
-    border-radius: 10px; /* Match card corners */
-    margin-bottom: 15px;
+.blog-card img {
+    width: 100%; /* Ensures the image stretches to fill the width of the card */
+    height: 200px; /* Sets a fixed height for uniformity */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+    object-position: center; /* Keeps the image centered */
+    border-radius: 10px; /* Keeps corners consistent with the card's style */
+    margin-bottom: 15px; /* Adds space below the image */
 }
 
-.feature-card h3 {
-    font-size: 1.5em;
-    margin-bottom: 10px;
-    color: #333;
-}
-
-.feature-card p {
+.blog-card p {
     font-size: 1em;
-    color: #666; /* Softer gray for descriptions */
-    margin-bottom: 20px;
+    color:grey; /* Softer gray for descriptions */
+    margin-bottom: 10px;
 }
-
-.feature-card .btn-secondary {
-    background-color: #f39c12;
+.blog-card .btn-secondary {
+    background-color: #f39c12; /* Orange button background */
     color: #fff;
     padding: 8px 16px;
     border: none;
@@ -176,56 +179,117 @@ body {
     font-weight: bold;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    text-align: center; /* Center the button text */
 }
 
-.feature-card .btn-secondary:hover {
-    background-color: #e67e22;
+.blog-card .btn-secondary:hover {
+    background-color: #e67e22; /* Darker orange on hover */
 }
+/* ============================================ */
+/* Upcoming Workshops Section */
+/* ============================================ */
+.upcoming-workshops {
+    margin-top: 40px;
+background-color: #f2d4b4; 
+padding: 50px 30px; /* Space around the section */
+text-align: left;
+}
+
+.upcoming-workshops h2 {
+font-size: 1.5rem; /* Slightly larger font for the heading */
+color: black; /* Dark text for contrast */
+margin-bottom: 20px;
+}
+
+.workshop-list {
+display: flex; /* Flexbox for horizontal alignment */
+justify-content: space-evenly; /* Center the cards */
+gap: 20px; /* Space between cards */
+flex-wrap: wrap; /* Allow wrapping for smaller screens */
+}
+
+.workshop-card {
+background-color: #fff; /* White background for the cards */
+border: 1px solid #ddd; /* Subtle border for structure */
+border-radius: 5px; /* Rounded corners */
+box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+padding: 20px;
+text-align: left;
+width: 800px; /* Fixed width for cards */
+transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+}
+
+.workshop-card:hover {
+transform: translateY(-5px); /* Slight lift on hover */
+box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+.workshop-card h3 {
+font-size: 1.5rem;
+color: #333;
+margin-bottom: 10px;
+}
+
+.workshop-card p {
+font-size: 1rem;
+color: #555; /* Softer gray for descriptions */
+margin-bottom: 10px;
+}
+
+.workshop-card .date {
+font-size: 0.9rem;
+color: #d67c00; /* Orange color for the date */
+font-weight: bold;
+}
+
 /* ============================================ */
 /* Footer Section */
 /* ============================================ */
-footer {
-    background-color: #000; /* Black background for contrast */
-    color: #fff; /* White text */
-    padding: 20px 0;
-    text-align: center; /* Center-align footer content */
+.footer {
+background-color: #f39c12; /* Orange background */
+color: #fff; /* White text */
+padding: 20px 0;
+text-align: left; /* Center-align footer content */
 }
-
-footer .footer-content {
+.footer-content {
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap; /* Allow wrapping on smaller screens */
-    gap: 30px;
+    justify-content: space-between; /* Space between contact and social icons */
+    align-items: left;
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    gap: 20px; /* Space between sections on smaller devices */
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
-}
-
-footer h3 {
+    }
+    
+    .contact-info h3 {
     margin-bottom: 10px;
     font-size: 1.2em;
-}
-
-footer ul {
-    list-style: none; /* Remove default bullets */
-    padding: 0;
-}
-
-footer ul li {
-    margin-bottom: 5px;
-}
-
-footer ul li a {
-    color: #fff; /* White text for links */
+    }
+    
+    .contact-info p {
+    margin: 5px 0;
+    font-size: 1em;
+    }
+    
+    .contact-info a {
+    color: #fff; /* White for email links */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold;
+    }
+    
+    .contact-info a:hover {
+    text-decoration: underline; /* Underline on hover */
+    }
+    
+    .social-icons a {
+    color: #fff; /* White icons */
+    margin: 0 10px;
+    font-size: 1.5em;
     text-decoration: none; /* Remove underline */
     transition: color 0.3s ease;
-}
-
-footer ul li a:hover {
-    color: #f39c12; /* Orange hover effect */
-}
-
-footer p {
-    margin: 20px 0 0;
-    font-size: 0.9em;
-}
+    }
+    
+    .social-icons a:hover {
+    color: #000; /* Change to black on hover */
+    }
