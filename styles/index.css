@@ -296,7 +296,7 @@ body {
     display: flex; /* Use Flexbox for alignment */
     justify-content: space-between; /* Place seats on the left and button on the right */
     align-items: center; /* Vertically align seats and more buttons */
-    margin-top: 10px; /* Optional: Add spacing above the button */
+    margin-top: 10px; /* Add spacing above the button */
 }
 /* ============================================ */
 /* Button Contents */

@@ -158,7 +158,7 @@ body {
     padding: 20px; /* Adds space inside the form */
     background-color: #f7ca9b; /* Light orange background */
     border-radius: 10px; /* Rounds the corners of the form */
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Shadow for depth */
 }
 
 .input-container {
@@ -339,7 +339,7 @@ input#clear-toggle:checked ~ .popup-clear {
 
 .bold {
     font-weight: bold;
-    color: #333; /* Optional: keep the color consistent */
+    color: #333;
 }
 
 /* Styling for Image */
