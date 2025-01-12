@@ -9,6 +9,16 @@ body {
     background-color: #fff; /* A white background keeps the site feeling clean and soft. */
 }
 
+html, body {
+    height: 100%; /* Ensures the entire viewport height is used */
+    margin: 0; /* Removes any default browser margin */
+    display: flex; /* Allows for a vertical layout with flexbox */
+    flex-direction: column; /* Stacks header, main content, and footer */
+}
+main {
+    flex: 1; /* Take up the remaining height of the viewpoint */
+}
+
 /* ============================================ */
 /* Header Navigation Bar */
 /* ============================================ */
@@ -112,7 +122,7 @@ body {
     background-color: #d8850d; /* Darker orange makes the hover state clear. */
 }   border-radius: 5px;
 
-/* ============================================ */
+/*============================================ */
 /* Blog Section Styling */
 /* ============================================ */
 .blog {
@@ -121,41 +131,79 @@ body {
     text-align: center; /* Center-align the heading */
 }
 
+/* ============================================ */
+/* Blog Container Styling */
+/* ============================================ */
+.blog-container {
+    margin: auto;
+    flex: 1;
+    flex-direction: row;
+    display: flex;
+    justify-content: space-around; /* Ensure space is distributed evenly */
+    align-items: flex-start; /* Aligns items to the top of the container */
+    gap: 15px; /* Add a moderate gap between blog cards and sidebar */
+    padding: 20px; /* Add some padding around the container */
+    width: 100%; /* Full-width usage */
+}
+
 .blog h2 {
     font-size: 2rem; /* Slightly larger heading */
     color: #333; /* Neutral dark gray for the heading */
     margin-bottom: 20px; /* Spacing below heading */
 }
-
 /* ============================================ */
-/* Blog List Styling */
+/* Blog Card List Styling */
 /* ============================================ */
 .blog-list {
-    margin-top: 0px;
-    display: flex;
-    justify-content: space-evenly; /* Spread blog cards evenly */
-    flex-wrap: wrap; /* Allow wrapping on smaller screens */
-    gap: 20px;
+    flex: 1;
+    display: flex; /* Align cards horizontally */
+    flex-wrap: nowrap; /* Prevent wrapping */
+    gap: 10px; /* Add space between cards */
+    justify-content: space-between; /* Adjust spacing */
+    align-items: flex-start; /* Align cards to the top */
+    padding: 0;
+    margin: 0;
+    width: 100%; /* Ensure the container spans the full width */
 }
 
 /* ============================================ */
 /* Blog Card Styling */
 /* ============================================ */
-.blog-card {
-    margin: 0px;
+.blog-card, .white-card {
+    flex: 1 1 calc(22% - 20px); /* Allow each card to take ~33% of the container */
+    margin: 10px; /* Adds space around each card */
     display: flex;
-    flex-direction: column; /* Stack items vertically */
+    flex-direction: column;
     justify-content: space-between;
-    background-color: #f6d39e; /* White background for contrast */
-    border: 1px solid #ddd; /* Subtle border for structure */
-    border-radius: 10px; /* Rounded corners for modern look */
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Add a shadow for depth */
-    padding:20px;
-    width: 500px; /* Fixed width for cards */
-    min-height: 700px;
-    height: 100%;
-    text-align: left; /* Align content to the left */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+    background-color: #f6d39e;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    height: auto;
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.blog-card img {
+    width: 100%; /* Ensure the image fits the card */
+    height: 200px; /* Adjust the height for consistency */
+    object-fit: cover; /* Scale images without distortion */
+    border-radius: 3px; /* Match the card corner rounding */
+    margin-bottom: 10px; /* Space below the image */
+}
+
+.blog-card h3 {
+    font-size: 1.2rem; /* Adjust font size for the heading */
+    margin-bottom: 10px; /* Space below the heading */
+    color: #333; /* Neutral dark gray for readability */
+    text-align: left;
+}
+
+.blog-card p {
+    font-size: 1rem; /* Slightly smaller font for descriptions */
+    color: #555; /* Softer gray for text */
+    margin-bottom: 10px; /* Space below paragraphs */
 }
 
 .blog-card:hover {
@@ -163,175 +211,250 @@ body {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
 }
 
-/* Blog Card Image */
-.blog-card img {
-    width: 180%; /* Full width of the card */
-    height: 300px; /* Consistent height for all images */
-    object-fit: cover; /*Scale images without distortion */
-    border-radius: 10px; /* Match card corner rounding */
-    margin-bottom: 20px; /* Space below the image */
+
+/* ============================================ */
+/* Blog White Styling */
+/* ============================================ */
+.white-card {
+    background-color: #fff; /* White background for contrast */
+    border: 0px solid #ddd; /* Subtle border for structure */
+    border-radius: 3px; /* Rounded corners for modern look */
+    box-shadow: 0 0px 0px rgba(0, 0, 0, 0.0); /* Add a shadow for depth */
+    justify-content: space-between;
+    padding: 20px;
+}
+.white-card img {
+    width: 100%; /* Ensure the image fits the card */
+    height: 200px; /* Adjust the height for consistency */
+    object-fit: cover; /* Scale images without distortion */
+    border-radius: 3px; /* Match the card corner rounding */
+    margin-bottom: 10px; /* Space below the image */
 }
 
-/* Blog Card Heading */
-.blog-card h3 {
-    font-size: 2rem; /* Larger for prominence */
-    color: #333; /* Dark gray for readability */
-    margin-bottom: 10px;
+.white-card h3 {
+    font-size: 1.2rem; /* Adjust font size for the heading */
+    margin-bottom: 10px; /* Space below the heading */
+    color: #333; /* Neutral dark gray for readability */
+    text-align: left;
 }
 
-/* Blog Card Paragraph */
-.blog-card p {
-    font-size: 1.5rem; /* Slightly smaller for descriptions */
+.white-card p {
+    font-size: 1rem; /* Slightly smaller font for descriptions */
     color: #555; /* Softer gray for text */
     margin-bottom: 10px; /* Space below paragraphs */
 }
 
-Blog Button
-.blog-card .btn-secondary {
-    background-color: #f39c12; /* Orange matches the theme */
-    color: #fff; /* White text for contrast */
-    padding: 10px 15px; /* Adjusted padding for balance */
-    border: none;
-    border-radius: 5px;
-    text-decoration: none; /* No underline */
-    font-weight: bold; /* Bold text for importance */
-    text-align: center; /* Center-align the text */
-    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transitions */
+.white-card:hover {
+    transform: translateY(-5px); /* Slight lift effect */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+/* ============================================ */
+/* Coding Tutor Recommendations */
+/* ============================================ */
+@media (max-width: 1024px) {
+    .blog-card, .white-card {
+        flex: 1 1 calc(25% - 20px); /* Three cards per row on medium screens */
+    }
 }
 
-.blog-card .btn-secondary:hover {
-    background-color: #e67e22; /* Darker orange on hover */
-    transform: scale(1.05); /* Slight zoom effect on hover */
+@media (max-width: 768px) {
+    .blog-card, .white-card {
+        flex: 1 1 calc(25% - 20px); /* Two cards per row on smaller screens */
+    }
 }
 
-.white-card {
-    background-color: #fff; /* White background for this card */
-    color: #333; /* Darker text for readability */
-    border: 1px solid #ddd; /* Optional: subtle border */
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
-    width: 500px; /* Fixed width for cards */
-    min-height: 700px;
+@media (max-width: 480px) {
+    .blog-card, .white-card {
+        flex: 1 1 100%; /* One card per row on very small screens */
+    }
+}
+/* ============================================ */
+/* Blog Sidebar Styling */
+/* ============================================ */
+.blog-sidebar {
+    margin-top: 55px; /* Adjusts the overall top spacing of the sidebar */
+    flex: 0 0 25%; /* Take up 25% of the container width */
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    border-radius: 5px;
-    text-align: left;
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
-    margin: 0px; /* Ensure there's no extra margin around the cards */
-}
-}
-.white-card h3 {
-    color: #000; /* Ensure the heading is visible */
-}
-.white-card p {
-    color: #555; /* Softer gray for paragraph text */
-}
-.white-card .btn-secondary {
-    background-color: #f39c12; /* Keep the button consistent */
-    color: #fff; /* Ensure the button text contrasts */
+    gap: 30px; /* Adds space between sidebar sections */
 }
 
-/* Sidebar Layout */
-.blog-sidebar {
-    display: flex; /* Stack boxes vertically */
-    flex-direction: column;
-    gap: 20px; /* Add space between boxes */
-    width: 250px; /* Fixed width for the sidebar */
-    margin-left: 20px; /* Space between the sidebar and blog cards */
-}
-
-/* Sidebar Boxes Styling */
+/* Sidebar Box Styling */
 .sidebar-box {
     background-color: #f4f4f4; /* Light gray background */
-    border: 1px solid #ddd; /* Subtle border */
-    border-radius: 5px; /* Rounded corners */
-    padding: 15px; /* Add spacing inside the box */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+    padding: 10px; /* Adds spacing inside the box */
+    width: 100%;
 }
 
 /* Sidebar Headings */
 .sidebar-box h3 {
-    font-size: 1.2rem;
-    margin-bottom: 10px;
+    margin-bottom: 10px; /* Reduces space below the heading */
+    font-size: 1.2rem; /* Slightly smaller for better spacing */
     color: #333;
 }
 
-/* Sidebar Links */
+/* Categories and Recent Posts List */
 .sidebar-box ul {
     list-style: none; /* Remove bullets */
-    padding: 0;
-    margin: 0;
+    padding: 0; /* Removes default padding from the list */
+    margin: 0; /* Removes extra margin */
 }
 
 .sidebar-box ul li {
-    margin-bottom: 8px;
+    margin-bottom: 4px; /* Reduce gap between items */
+    font-size: 1.2em;
 }
 
 .sidebar-box ul li a {
-    text-decoration: none; /* Remove underline */
-    color: #f39c12; /* Match your theme color */
-    font-weight: bold;
-    transition: color 0.3s ease;
+    text-decoration: none; /* Remove underlining */
+    color: #333; /* Neutral color for text */
+    transition: color 0.3s ease; /* Hover effect */
 }
 
 .sidebar-box ul li a:hover {
-    color: #e67e22; /* Slightly darker orange on hover */
+    color: #f39c12; /* Change color on hover */
 }
 
+/* ============================================ */
 /* Search Box Styling */
+/* ============================================ */
 .search-box input {
     width: 100%; /* Full width input */
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ddd; /* Border around input */
-    border-radius: 5px; /* Rounded corners */
+    padding: 10px; /* Increase padding for taller input box */
+    font-size: 1rem; /* Slightly larger font */
+    border: 1px solid #ddd; /* Subtle border for structure */
+    border-radius: 3px; /* Rounded corners for a modern look */
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+    margin-bottom: 8px; /* Space between input and button */
 }
 
 .search-box button {
-    background-color: #f39c12;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
+    width: 100%; /* Make the button span the width of the container */
+    padding: 5px; /* Padding for a larger button */
+    background-color: #f39c12; /* Orange theme color */
+    color: white; /* White text for contrast */
+    border: none; /* No border */
+    border-radius: 3px; /* Rounded corners */
+    font-size: 1rem; /* Font size for readability */
+    font-weight: bold; /* Bold text for prominence */
+    cursor: pointer; /* Pointer cursor for interactivity */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Hover effect */
 }
 
+/* Button Hover Effect */
 .search-box button:hover {
-    background-color: #e67e22; /* Darker orange on hover */
+    background-color: #e67e22; /* Darker orange for hover state */
+    transform: scale(1.05); /* Slight zoom effect */
 }
 
-/* Sidebar Section
-.sidebar {
-    flex: 1; /* Take up less space compared to blog cards */
-    margin-left: 20px; /* Space between blog cards and sidebar */
-    padding: 15px;
-    background-color: #f2f2f2; /* Light gray for contrast */
-    border-radius: 5px;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+/* ============================================ */
+/* Footer Styling */
+/* ============================================ */
+.footer {
+    background-color: #f39c12; /* Orange background */
+    color: white; /* White text for contrast */
+    padding: 20px 50px; /* Spacing around the footer */
+    border-top: 3px solid white; /* Add a top border to the footer */
+    text-align: left;
+    justify-content: space-between; /* Space out the two sections */
+    align-items: flex-start; /* Aligns items at the top */
 }
 
-.sidebar h4 {
-    font-size: 1.1rem;
-    margin-bottom: 10px;
-    color: #333;
+.footer-container {
+    display: flex; /* Use Flexbox for layout */
+    justify-content: space-between; /* Push items to the far ends */
+    width: 100%; /* Make the container span the full width */
+}
+/* ============================================ */
+/* Footer Links Styling */
+/* ============================================ */
+.footer-links {
+    display: flex; /* Aligns the icons horizontally */
+    gap: 15px; /* Adds space between the icons */
+    justify-content: left; /* Place the icons to the left */
+    padding: 0; /* Removes default padding */
+    list-style: none; /* Removes bullet points */
 }
 
-.sidebar ul {
-    list-style: none;
-    padding: 0;
+.footer-links li {
+    margin: 0; /* Removes any default margin */
 }
 
-.sidebar ul li {
-    font-size: 0.9rem;
-    color: #555;
-    margin-bottom: 5px;
+.footer-links img {
+    width: 30px; /* Adjust the size of the icons */
+    height: 30px; /* Consistent height for all icons */
+    transition: transform 0.3s ease; /* Adds a hover effect */
+    cursor: pointer; /* Shows a pointer cursor on hover */
 }
 
-.search-bar input {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-} */
+.footer-links img:hover {
+    transform: scale(1.5); /* Slightly enlarges the icon on hover */
+}
+.footer-links img {
+    width: 20px; /* Adjust the size of the icons */
+    height: 20px; /* Ensure consistent height */
+    margin-right: 8px; /* Add space between the icon and the text */
+    vertical-align: middle; /* Align the image with the text */
+}
+/* ============================================ */
+/* Footer About Styling */
+/* ============================================ */
+.footer-about {
+    flex: 1; /* Takes equal space */
+    margin: 10px; /* Add margin for spacing */
+}
+
+.footer-about p {
+    font-size: 1.5rem; /* Regular paragraph font size */
+    line-height: 1.5; /* Better readability */
+    color: white
+}
+
+/* ============================================ */
+/* Footer About & Connect Shared Styling */
+/* ============================================ */
+.footer-about h3,
+.footer-connect h3 {
+    font-size: 2rem; /* Larger heading font */
+    margin-bottom: 10px; /* Space below the heading */
+    color: white;
+}
+
+/* ============================================ */
+/* Coding Tutor Recommendations */
+/* ============================================ */
+
+/* Icons */
+.footer-connect ul li i {
+    margin-right: 8px; /* Add space between the icon and text */
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column; /* Stack sections vertically */
+        text-align: center;
+    }
+
+    .footer-about,
+    .footer-connect {
+        width: 100%; /* Full width for smaller screens */
+        margin-bottom: 20px; /* Add space between stacked sections */
+    }
+}
+
+/* ============================================ */
+/* Footer Copyright */
+/* ============================================ */
+
+.footer-copyright {
+    font-weight: bold;
+    text-align: center; /* Center the copyright text */
+    font-size: 0.9rem; /* Slightly smaller font size */
+    color: #fff; /* White text for contrast */
+    margin-top: 15px; /* Space above the copyright text */
+    padding: 10px 0; /* Padding around the text */
+    border-top: 1px solid rgba(255, 255, 255, 0.2); /* Subtle border for separation (Tutor Recommendation Challenge) */
+    background-color: #f39c12;
+}
