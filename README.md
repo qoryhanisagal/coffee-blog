@@ -64,6 +64,7 @@ coffee-blog/
 
 ### Blog Page Wireframe(Pending Development)
 ![image](https://github.com/user-attachments/assets/ce3d5f82-bef8-41a7-83f2-1707924790b1)
+![image](https://github.com/user-attachments/assets/3d3087d5-e39c-4bfa-bcea-4c1b463b7572)
 
 ### Workshops & Courses Page Wireframe(Pending Development)
 
