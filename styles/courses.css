@@ -1,0 +1,290 @@
+/* ============================================ */
+/* General Styles */
+/* ============================================ */
+
+body {
+    display: flex;
+    flex-direction: column; /* I used Flexbox to create a column layout for the body. */
+    font-family: Arial, Helvetica, sans-serif; /* I chose a clean and modern sans-serif font for readability. */
+    line-height: 1.6; /* I added space between lines to make the text easier to read. */
+    color: black;
+    margin: 0; /* I removed the default browser margins for consistent layout. */
+    background-color: white;
+}
+html, body {
+    height: 100%; /* I made the html and body take up the full height of the viewport. */
+    margin: 0; /* I removed default browser margins to avoid unexpected spacing. */
+    display: flex;
+    flex-direction: column; /* I applied a column layout to the overall structure. */
+    padding: 0;
+}
+/* ============================================ */
+/* Navigation Bar */
+/* ============================================ */
+
+.courses-nav-bar {
+    display: flex; /* I used Flexbox to arrange the navbar items horizontally. */
+    justify-content: space-between; /* I spaced out the title and navigation links evenly. */
+    align-items: center; /* I vertically aligned all items in the navbar. */
+    padding: 10px 20px; /* I added padding for spacing around the navbar content. */
+    background-color: white;
+    color: black;
+}
+
+/* ============================================ */
+/* Navigation Bar Title */
+/* ============================================ */
+.nav-bar-title {
+    display: flex; /* I used Flexbox to align the logo and title horizontally. */
+    align-items: center; /* I vertically centered the logo and title text. */
+    font-size: 24px; /* I made the font slightly larger to emphasize the brand name. */
+    font-weight: bold; /* I used bold text to make the brand name stand out. */
+    color: black;
+}
+
+.nav-bar-title .logo {
+    width: 40px; /* I set a consistent logo size across pages. */
+    margin-right: 10px; /* I added spacing between the logo and title text. */
+}
+/* ============================================ */
+/* Navigation Links */
+/* ============================================ */
+.nav-links {
+    list-style: none; /* I removed default bullet points for a cleaner look. */
+    display: flex; /* I arranged the navigation links horizontally. */
+    gap: 20px; /* I added spacing between each navigation link. */
+}
+
+.nav-links a {
+    text-decoration: none; /* I removed the underline for a modern appearance. */
+    color: black;
+    font-weight: bold; /* I made the links stand out by making them bold. */
+    transition: color 0.3s ease; /* I added a smooth hover transition effect. */
+}
+
+/* ================================== */
+/* Tutor Recommendation */
+/* ================================== */
+.nav-links a.active {
+    text-decoration: underline; /* I underlined the current page link for emphasis. */
+}
+
+.nav-links a:hover {
+    color: #333; /* I changed the hover color to dark gray for interactivity. */
+}
+
+/* ============================================ */
+/* Hero Section */
+/* ============================================ */
+.hero {
+    background: url('../img/courses-screen-banner.png') no-repeat center center;
+    background-size: cover; /* I ensured the image fills the container completely. */
+    background-position: bottom center; /* I centered the image while keeping the focus at the bottom. */
+    color: white; /* I used white text to contrast against the image. */
+    text-align: center; /* I centered the hero text horizontally. */
+    position: relative; /* I positioned the overlay relative to the hero section. */
+    display: flex; /* I used Flexbox to align content vertically. */
+    justify-content: center; /* I centered the content horizontally. */
+    align-items: center; /* I centered the content vertically. */
+    width: 100%; /* I made sure the hero spans the full width of the container. */
+    height: 100%; /* I adjusted the height dynamically to fit the content. */
+    min-height: 600px; /* I set a minimum height for consistency. */
+}
+
+.hero-content {
+    position: relative; /* I positioned the overlay within the hero section. */
+    width: 100%; /* I stretched the content box across the entire hero section width. */
+    background: rgba(255, 255, 255, 0.7); /* I added a semi-transparent white overlay for better visibility. */
+    padding: 20px; /* I added padding around the text for spacing. */
+    border-radius: none;
+    box-shadow: none;
+    text-align: left;
+    color: black;
+    padding: 40px 20px; /* I added vertical and horizontal padding for more spacing inside the box. */
+    justify-content: left; /* I aligned the content to the left. */
+    top: -35%; /* I positioned the overlay at the top of the viewport. */
+    bottom: 0; /* I ensured the overlay starts at the bottom of the section. */
+}
+
+.hero h1 {
+    font-size: 2.5em; /* I increased the font size for the main heading. */
+    margin-bottom: 15px; /* I added space below the heading. */
+    font-weight: bold; /* I used bold text to emphasize the heading. */
+}
+
+.hero p {
+    font-size: 1.4em; /* I made the paragraph text slightly larger for readability. */
+    line-height: 1.4; /* I added spacing between lines for better readability. */
+    color: black;
+}
+
+/* ============================================ */
+/* Courses Section */
+/* ============================================ */
+
+.available-courses {
+    padding: 30px; /* I added spacing around the courses section. */
+    text-align: center; /* I centered the section content. */
+}
+
+.available-courses h2 {
+    font-size: 2rem; /* I made the section title prominent. */
+    color: #333; /* I used a dark gray color for a professional look. */
+    margin-bottom: 40px; /* I added space below the title. */
+    text-align: left;
+}
+
+.courses-grid {
+    display: grid; /* I used a grid layout to organize the course cards. */
+    gap: 20px; /* I added space between the cards. */
+    margin-top: 20px; /* I added space between the title and the grid. */
+/* ============================================ */
+/* Tutor Recommendation */
+/* ============================================ */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* I created responsive columns with a minimum width of 300px. */
+}
+
+.course-card {
+    background-color: white; /* I gave the cards a clean white background. */
+    border: 1px solid #ddd; /* I added a subtle border for definition. */
+    border-radius: 8px; /* I rounded the corners for a modern look. */
+    padding: 20px; /* I added space inside the card. */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* I added a light shadow to make the cards stand out. */
+    text-align: left; /* I aligned the text to the left for readability. */
+    display: flex; /* I used Flexbox for the card content layout. */
+    flex-direction: column; /* I stacked the content vertically. */
+    justify-content: space-between; /* I aligned the button at the bottom of the card. */
+    position: relative;
+}
+
+.course-card h3 {
+    color: #f39c12; /* I used a golden-orange color for the course titles. */
+    margin-bottom: 10px; /* I added space below the title. */
+    font-size: 2em;
+}
+
+.course-card p {
+    font-size: 1.5em; /* I made the text slightly larger for better readability. */
+    margin-bottom: 10px; /* I added space between paragraphs. */
+}
+
+.course-card .course-description {
+    font-size: 1.8em; /* I used a smaller font size for the description. */
+    color: black;
+    margin-top: 10px; /* I added space above the description. */
+    line-height: 1.4; /* I improved readability with better line spacing. */
+}
+
+.course-card .btn-enroll {
+    display: inline-block; /* I made the button behave like an inline element. */
+    padding: 10px 20px; /* I added spacing inside the button. */
+    background-color: #f39c12; /* I used a golden-orange background for the buttons. */
+    font-size: 1.2em;
+    color: white; /* I used white text for contrast. */
+    border: none; /* I removed default button borders. */
+    border-radius: 4px; /* I rounded the corners for a modern look. */
+    text-decoration: none; /* I removed the underline for a clean design. */
+    font-weight: bold; /* I made the text bold to emphasize the button. */
+    transition: background-color 0.3s ease; /* I added a smooth hover effect. */
+    margin-top: 10px; /* I added spacing above the button. */
+    width: auto;
+    align-self: flex-end;
+}
+
+.course-card .btn-enroll:hover {
+    background-color: #333; /* I used a dark gray color for the hover effect. */
+}
+
+/* ============================================ */
+/* Footer Styling */
+/* ============================================ */
+
+.footer {
+    background-color: black;
+    color: #fff; /* I set the default text color in the footer to white. */
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer p {
+    color: #f39c12; /* I changed the copyright text color to golden-orange. */
+    font-family: 'Arial', sans-serif; /* I used Arial for a clean font style. */
+    font-size: 1em; /* I adjusted the font size for better readability. */
+    margin: 10px 0 0; /* I added spacing above and below the text. */
+    line-height: 1.5;
+}
+
+/* Adjust links in the footer */
+footer a {
+    color: white; /* I set the default link color to white. */
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline; /* I added an underline effect on hover. */
+}
+
+/* ============================================ */
+/* Contact Info */
+/* ============================================ */
+
+.contact-info {
+    display: flex; /* I used Flexbox to align the contact info horizontally. */
+    justify-content: center; /* I centered the contact info in the footer. */
+    gap: 20px; /* I added spacing between the contact items. */
+    margin-bottom: 15px;
+    font-size: 1.5em;
+}
+
+.contact-info span {
+    display: flex; /* I used Flexbox to align the icons and text. */
+    align-items: center; /* I vertically centered the icons and text. */
+    gap: 8px; /* I added space between the icons and text. */
+}
+
+.contact-info .icon {
+    width: 20px; /* I ensured the icons have a consistent size. */
+    height: 20px;
+}
+
+/* ============================================ */
+/* Social Media Icons */
+/* ============================================ */
+
+.social-media {
+    display: flex; /* I used Flexbox to align the social media icons horizontally. */
+    justify-content: center; /* I centered the icons in the footer. */
+    gap: 15px; /* I added spacing between the icons. */
+    margin-bottom: 20px; /* I added a gap between the icons and the copyright text. */
+}
+
+.social-media a {
+    display: inline-block;
+}
+
+.social-media .social-icon {
+    width: 30px; /* I set the size of the social media icons. */
+    height: 30px;
+}
+
+/* ============================================ */
+/* Copyright Styling */
+/* ============================================ */
+.copyright {
+    color: white; /* I set the copyright text color to white. */
+    font-weight: bold; /* I made the copyright text bold. */
+}
+/* ============================================ */
+/* Copyright Text */
+/* ============================================ */
+.footer p {
+    margin: 0; /* I reset the default margins for better alignment. */
+}
+.footer p .copyright {
+    color: #fff; /* I ensured the copyright text color is white. */
+    font-family: 'Arial', sans-serif; /* I used Arial for consistency with the rest of the footer. */
+    font-size: 1.2em; /* I slightly increased the font size for readability. */
+    display: block; /* I ensured the text stays on its own line. */
+}
+
+
