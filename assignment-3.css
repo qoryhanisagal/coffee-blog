@@ -1,0 +1,212 @@
+/* Global Styles */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    color: #000; /* Default text color */
+    min-height: 100vh;
+    background-color: #f9f9f9; /* Light background */
+}
+
+main {
+    flex: 1; /* This ensures the main content takes up the remaining space and pushes the footer to the bottom */
+}
+
+
+/* Utilities */
+.container {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+p {
+    line-height: 2;
+}
+
+h2, h3 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+img {
+    max-width: 100%; /* Ensure images don't overflow */
+}
+
+/* Header Styles */
+.header-with-bg {
+    background-image: url('img/banner.jpg'); /* Replace with your header image */
+    background-size: cover; /* Make sure image covers the area */
+    background-position: center; /* Centers the background image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    color: white;
+    height: 400px; /* Set a fixed height for header */
+    padding: 50px 20px; /* Add padding inside the header */
+    text-align: center; /* Center-align text in the header */
+    position: relative;
+}
+
+.menu-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    z-index: 10; /* Ensure nav appears above the background */
+}
+
+.blog-name {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Adds shadow to text */
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #f39c12; /* Hover effect color */
+}
+
+/* About Section */
+.about-section {
+    display: flex;
+    flex-direction: column; /* Stack the content vertically */
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    padding: 40px 20px; /* Add padding for spacing */
+}
+
+.about-img-container {
+    width: 60%;
+    display: flex;
+    justify-content: center; /* Center the image horizontally */
+    margin-top: 20px;
+}
+.about-img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for effect */
+}
+
+.about-content {
+    width: 60%; /* Limit text width */
+    text-align: left; /* Align text to the left */
+    margin-top: 20px; /* Add space between image and text */
+}
+
+.about-section h2 {
+    font-size: 3.5em;
+    margin-bottom: 20px;
+    color: #333; /* Dark gray for heading */
+}
+
+.about-content p {
+    font-size: 1.8em;
+    color: #555; /* Slightly lighter text color */
+    line-height: 1.8; /* Increase line height for readability */
+    margin-bottom: 20px;
+}
+
+/* Button Styles */
+.menu-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.btn {
+    padding: 8px 15px;
+    font-size: 0.9em;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent button background */
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #f39c12; /* Hover effect */
+}
+
+/* Footer Styles */
+footer {
+    background-color: #000; /* Black background for footer */
+    color: white; /* White text */
+    display: flex;
+    justify-content: space-between; /* Spread out content across the footer */
+    align-items: center; /* Vertically center content */
+    padding: 20px 40px; /* Padding around the footer */
+    margin-top: 40px; /* Space above footer */
+}
+
+footer .footer-left {
+    flex: 1; /* Take up the remaining space */
+}
+
+footer .blog-name {
+    font-size: 2em; /* Make "Coffee Blog" text larger */
+    color: white; /* White color for the title */
+    text-transform: uppercase; /* Uppercase letters for emphasis */
+    font-weight: bold; /* Make it bold */
+    margin: 0; /* Remove any default margin */
+}
+
+footer .footer-nav {
+    flex: 2; /* Take up the remaining space for the navigation */
+    text-align: center; /* Center-align the navigation links */
+}
+
+footer .footer-links {
+    list-style: none; /* Remove bullet points */
+    display: flex;
+    justify-content: center; /* Center the links horizontally */
+    padding: 0;
+    margin: 0;
+}
+
+footer .footer-links li {
+    margin: 0 15px; /* Add space between links */
+}
+
+footer .footer-links a {
+    text-decoration: none; /* Remove underline */
+    color: white; /* White text for links */
+    font-size: 1.5em; /* Set font size for links */
+    text-transform: uppercase; /* Uppercase links */
+    transition: color 0.3s ease; /* Smooth hover effect */
+}
+
+footer .footer-links a:hover {
+    color: #f39c12; /* Hover effect color */
+}
+
+footer p {
+    font-size: 14px; /* Adjust the font size for the footer text */
+    margin-top: 20px; /* Space between links and copyright */
+    text-align: center; /* Center-align the copyright */
+}
