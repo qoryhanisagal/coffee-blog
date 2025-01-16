@@ -1,0 +1,228 @@
+/* Global */
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+    line-height: 2;
+}
+
+img {
+    max-width: 100%;
+}
+
+h2, h3 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/* Utilities */
+.container {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.border-b {
+    border: 1px solid #ddd; /* Adds a light border */
+    border-radius: 8px; /* Rounds the corners */
+    padding: 20px; /* Adds padding inside the block */
+    margin-bottom: 20px; /* Adds spacing between blocks */
+    background-color: white; /* Sets a white background for each block */
+}
+/* Base Button Class */
+.btn {
+    display: inline-block;        /* Makes the element behave like a button */
+    color: white;                /* White text color */
+    padding: 10px 20px;          /* Button padding */
+    margin-bottom: 10px;         /* Adds spacing below the button */
+    text-decoration: none;       /* Removes underline from links */
+    text-transform: uppercase;   /* Makes all text uppercase */
+    font-size: 12px;             /* Sets the font size */
+    letter-spacing: 2px;         /* Adds spacing between letters */
+    border-radius: 4px;          /* Rounded button corners */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+/* Class for "Read More" Buttons */
+.btn-read-more {
+    background-color: black;     /* Black button background */
+    color: white;                /* White text */
+}
+
+.btn-read-more:hover {
+    background-color: gray;      /* Gray button background on hover */
+}
+
+/* Class for "More Information" Buttons */
+.btn-more {
+    background-color: #cd7f32;   /* Bronze button background */
+    color: white;                /* White text */
+}
+
+.btn-more:hover {
+    background-color: #f39c12;   /* Light bronze background on hover */
+}
+
+/* Class for "Info" Buttons */
+.btn-info {
+    background-color: #cd7f32;   /* Bronze button background */
+    color: white;                /* White text */
+}
+
+.btn-info:hover {
+    background-color: #f39c12;   /* Light bronze background on hover */
+}
+
+/* Header with Background */
+.header-with-bg {
+    background-image: url('img/banner.jpg'); /* Replace with the path to your image */
+    background-size: cover;                /* Ensures the image covers the whole area */
+    background-position: center;           /* Centers the image */
+    background-repeat: no-repeat;          /* Prevents the image from repeating */
+    color: white;                          /* Makes text white for contrast */
+    padding: 50px 20px;                    /* Adds spacing inside the header */
+    height: 400px;                         /* Set a fixed height for the header */
+}
+
+/* Blog Name */
+.blog-name {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Text shadow for readability */
+}
+
+/* Navigation Links */
+.nav-links {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 1em;
+    transition: color 0.3s ease;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Text shadow for readability */
+}
+
+.nav-links a:hover {
+    color: #f39c12; /* Hover color */
+}
+
+/* Buttons */
+.menu-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.btn {
+    text-decoration: none;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 4px;
+    font-size: 0.9em;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent button background */
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #f39c12; /* Hover effect */
+}
+
+/* Buttons Specific Colors */
+.btn-signin {
+    background-color: rgba(211, 84, 0, 0.7);
+}
+
+.btn-join {
+    background-color: rgba(230, 126, 34, 0.7);
+}
+
+/* Courses Section */
+#courses {
+    background-color: #f9f9f9;   /* Light background for contrast */
+    padding: 40px 20px;          /* Add spacing */
+    text-align: center;          /* Center-align content */
+}
+
+#courses h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;                 /* Dark gray heading */
+}
+/* Individual Course Styles */
+.course {
+    border: 1px solid #ddd;      /* Light border around each course */
+    border-radius: 8px;          /* Rounded corners */
+    padding: 20px;               /* Space inside the course box */
+    margin: 20px auto;           /* Add spacing between courses */
+    max-width: 400px;            /* Limit the width */
+    background-color: white;     /* White background for courses */
+    text-align: left;            /* Left-align content within courses */
+}
+
+.border-b {
+    border: 1px solid #ddd;      /* Light border around each course */
+    border-radius: 8px;          /* Rounded corners */
+    padding: 20px;               /* Space inside the course box */
+    margin-bottom: 20px;         /* Add spacing between courses */
+    background-color: white;     /* White background for courses */
+ }
+
+.course h3 {
+    font-size: 1.5em;
+    color: #000;                 /* Black course titles */
+    margin-bottom: 10px;
+}
+
+.course p {
+    font-size: 1em;
+    color: #555;                 /* Gray text for details */
+    margin: 5px 0;
+}
+
+/* Navigation Links Footer*/
+footer {
+    background-color: #000; /* Black background */
+    color: white; /* White text */
+    text-align: center; /* Center-align content */
+    padding: 20px 0; /* Vertical padding */
+}
+
+footer nav ul {
+    list-style: none; /* Remove bullets */
+    padding: 0;
+    margin: 10px 0; /* Add spacing around the list */
+}
+
+footer nav ul li {
+    display: inline; /* Display links in a row */
+    margin: 0 15px; /* Add spacing between links */
+}
+
+footer nav ul li a {
+    color: white; /* White link text */
+    text-decoration: none; /* Remove underline */
+    font-size: 14px; /* Adjust font size */
+    text-transform: uppercase; /* Uppercase letters */
+}
+
+footer nav ul li a:hover {
+    color: #f39c12; /* Change color on hover */
+}
